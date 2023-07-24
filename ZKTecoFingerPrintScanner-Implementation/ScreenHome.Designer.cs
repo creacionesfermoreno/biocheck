@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScreenHome));
-            this.lblSerie = new MaterialSkin.Controls.MaterialLabel();
             this.btnMarkAsistence = new System.Windows.Forms.Button();
             this.TabSelector = new MaterialSkin.Controls.MaterialTabSelector();
             this.TabControl = new MaterialSkin.Controls.MaterialTabControl();
@@ -238,6 +237,7 @@
             this.BtnConnectionNew = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblSerie = new System.Windows.Forms.Label();
             this.lblHour = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
@@ -312,21 +312,6 @@
             this.tableLayoutPanel16.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblSerie
-            // 
-            this.lblSerie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSerie.AutoSize = true;
-            this.lblSerie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.lblSerie.Depth = 0;
-            this.lblSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.lblSerie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSerie.Location = new System.Drawing.Point(64, 26);
-            this.lblSerie.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblSerie.Name = "lblSerie";
-            this.lblSerie.Size = new System.Drawing.Size(129, 18);
-            this.lblSerie.TabIndex = 3;
-            this.lblSerie.Text = "Estado dispositivo";
             // 
             // btnMarkAsistence
             // 
@@ -2634,7 +2619,6 @@
             // 
             this.panelDeviseConnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.panelDeviseConnect.Controls.Add(this.pictureBox1);
-            this.panelDeviseConnect.Controls.Add(this.lblSerie);
             this.panelDeviseConnect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDeviseConnect.Location = new System.Drawing.Point(20, 35);
             this.panelDeviseConnect.Name = "panelDeviseConnect";
@@ -2844,6 +2828,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.panel4.Controls.Add(this.lblSerie);
             this.panel4.Controls.Add(this.lblHour);
             this.panel4.Controls.Add(this.statusBar1);
             this.panel4.Controls.Add(this.lblDate);
@@ -2854,6 +2839,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1200, 108);
             this.panel4.TabIndex = 13;
+            // 
+            // lblSerie
+            // 
+            this.lblSerie.AutoSize = true;
+            this.lblSerie.Location = new System.Drawing.Point(34, 16);
+            this.lblSerie.Name = "lblSerie";
+            this.lblSerie.Size = new System.Drawing.Size(41, 13);
+            this.lblSerie.TabIndex = 3;
+            this.lblSerie.Text = "label12";
             // 
             // lblHour
             // 
@@ -2946,11 +2940,11 @@
             // statusBar1
             // 
             this.statusBar1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusBar1.Location = new System.Drawing.Point(433, 16);
+            this.statusBar1.Location = new System.Drawing.Point(624, 16);
             this.statusBar1.Message = "Estado membresia";
             this.statusBar1.MessageType = false;
             this.statusBar1.Name = "statusBar1";
-            this.statusBar1.Size = new System.Drawing.Size(488, 46);
+            this.statusBar1.Size = new System.Drawing.Size(275, 46);
             this.statusBar1.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
             this.statusBar1.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
             this.statusBar1.TabIndex = 1;
@@ -2958,7 +2952,7 @@
             // lblMessage
             // 
             this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.Location = new System.Drawing.Point(444, 82);
+            this.lblMessage.Location = new System.Drawing.Point(622, 68);
             this.lblMessage.Message = "Estado socio ";
             this.lblMessage.MessageType = false;
             this.lblMessage.Name = "lblMessage";
@@ -3052,7 +3046,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembresias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGymLogo)).EndInit();
             this.panelDeviseConnect.ResumeLayout(false);
-            this.panelDeviseConnect.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCloseHome)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -3072,7 +3065,7 @@
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialLabel lblSerie;
+       
         private MaterialSkin.Controls.MaterialTabSelector TabSelector;
         private System.Windows.Forms.PictureBox PicCloseHome;
       
@@ -3293,5 +3286,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label lblSerie;
     }
 }

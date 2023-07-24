@@ -225,7 +225,6 @@
     <EmbeddedResource Include="ScreenHome.resx">
       <DependentUpon>ScreenHome.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="FitBio_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
