@@ -483,6 +483,7 @@ namespace ZKTecoFingerPrintScanner_Implementation.Services
         //profesionales
         public async Task<ResponseObject> MarcarPersonalProfesional(object body)
         {
+            
             ResponseObject resp = new ResponseObject();
             var content = JsonConvert.SerializeObject(body);
             var httpContent = new StringContent(content, Encoding.UTF8, "application/json");
@@ -502,7 +503,7 @@ namespace ZKTecoFingerPrintScanner_Implementation.Services
             }
             catch (HttpRequestException ex)
             {
-                resp.Message1 = ex.Message;
+                resp.Message1 = ex.Message.ToString();
             }
             return resp;
         }
