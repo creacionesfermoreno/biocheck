@@ -11,6 +11,7 @@ using System.Messaging;
 using System.Net;
 using System.Net.Http;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ using ZKTecoFingerPrintScanner_Implementation.Helpers;
 using ZKTecoFingerPrintScanner_Implementation.Models;
 using ZKTecoFingerPrintScanner_Implementation.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace ZKTecoFingerPrintScanner_Implementation
 {
@@ -183,17 +185,45 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 if (HorariosProfesionales != null && HorariosProfesionales.Count > 0)
                 {
                     lboxProfesionales.Items.Clear();
-                    lboxProfesionales.Items.Add(string.Format("{0,-150} {1,-20} {2,-20}", "CLASE", "INGRESO", "SALIDA"));
-                    lboxProfesionales.Items.Add(new string('-', 300));
+
+
+                    const int claseColumnWidth = 95;
+                    const int ingresoColumnWidth = 20;
+                    const int salidaColumnWidth = 20;
+
+
+                    Font listBoxFont = new Font("Microsoft YaHei", 10);
+                    lboxProfesionales.Font = listBoxFont;
+                  
+
+                    lboxProfesionales.Items.Add(string.Format("{0,-" + 155 + "} {1,-" + ingresoColumnWidth + "} {2,-" + salidaColumnWidth + "}", "CLASE", "INGRESO", "SALIDA"));
+                    lboxProfesionales.Items.Add(new string('-', 100 + ingresoColumnWidth + salidaColumnWidth));
 
                     foreach (HorarioProfesional p in HorariosProfesionales)
                     {
                         String clase = $"{p.DesSala} - {p.Disciplina} {p.HoraInicioTexto} - {p.HoraFinTexto} AFORO {p.CantidadAsistencias} DE {p.CapacidadPermitida}";
-                        string claseAlineada = clase.PadRight(120);
-                        string ingresoAlineado = string.IsNullOrEmpty(p.FechaHoraIngresoTxt) ? "--:--" : p.FechaHoraIngresoTxt.PadRight(20);
-                        string salidaAlineada = string.IsNullOrEmpty(p.FechaHoraSalidaTxt) ? "--:--" : p.FechaHoraSalidaTxt.PadRight(20);
-                        lboxProfesionales.Items.Add($"{claseAlineada} {ingresoAlineado} {salidaAlineada}");
+
+                        int w = 0;
+                        if (clase.Length <= claseColumnWidth)
+                        {
+                            w = (claseColumnWidth - Convert.ToInt32(clase.Length));
+                            if (w > 30)
+                            {
+                                clase = w+clase + new string('_', w + 5);
+
+                            }
+                            else
+                            {
+
+                                clase = w+clase + new string('_', w);
+                            }
+                        }
+                        string ingresoAlineado = string.IsNullOrEmpty(p.FechaHoraIngresoTxt) ? "--:--" : p.FechaHoraIngresoTxt;
+                        string salidaAlineada = string.IsNullOrEmpty(p.FechaHoraSalidaTxt) ? "--:--" : p.FechaHoraSalidaTxt;
+                        lboxProfesionales.Items.Add(string.Format("{0,-" + w + "} {1,-" + ingresoColumnWidth + "} {2,-" + salidaColumnWidth + "}", clase, ingresoAlineado, salidaAlineada));
+
                     }
+
                 }
                 else
                 {
@@ -294,12 +324,13 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     CodigoUnidadNegocio = DataSession.Unidad,
                     CodigoSede = DataSession.Sede,
                     CodigoHorarioClasesConfiguracion = Horario.CodigoHorarioClasesConfiguracion,
-                    CodigoHorarioClasesTiempoReal = Horario.CodigoHorarioClasesTiempoReal,
+                    CodigoHorarioClasesTiempoReal = Horario.CodigoHorarioClasesTiempoReal ?? "",
                     CodigoProfesional = Horario.CodigoProfesional,
-                    CodigoPersonalAsistencia = Horario.CodigoPersonalAsistencia,
+                    CodigoPersonalAsistencia = Horario.CodigoPersonalAsistencia ?? "",
                     DiaNumero = Horario.DiaNumero,
                     TipoAsistencia = type
                 };
+
                 var resp = await api.MarcarPersonalProfesional(body);
                 if (resp.Success)
                 {
@@ -474,7 +505,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
                     foreach (Asistence a in dataSocioAll.Asistences)
                     {
-                        listBox1.Items.Add(string.Format("{0,-25} {1,-25} {2,-25} {3,-30}", a.FCreacionText, a.HourText, a.DiaSemana, a.UsuarioCreacion));
+                        listBox1.Items.Add(string.Format("{0,-25} {1,-25} {2,-25} {3,-60}", a.FCreacionText, a.HourText, a.DiaSemana, a.UsuarioCreacion));
                     }
 
                 }
@@ -486,7 +517,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     listBox2.Items.Add(new string('-', 100));
                     foreach (Incidencia c in dataSocioAll.Incidencias)
                     {
-                        listBox2.Items.Add(string.Format("{0,-30} {1,-30} {2,-60}", c.FechaCreacion, c.UsuarioCreacion, c.Ocurrencia));
+                        listBox2.Items.Add(string.Format("{0,-30} {1,-30} {2,-90}", c.FechaCreacion, c.UsuarioCreacion, c.Ocurrencia));
                     }
                 }
 
@@ -673,21 +704,21 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     if (response.Success)
                     {
                         huellaData.SetSocios(response.Data);
-                        lblCount.Text = $"CANTIDAD REGISTROS : {huellaData.Socios.Count}";
+                        lblCount.Text = $"Cant. Registros : {huellaData.Socios.Count}";
                     }
 
                     var responseF = await api.FingerPrintsListFijo(new { DefaultKeyEmpresa = DataSession.DKey });
                     if (responseF.Success)
                     {
                         huellaData.SetFijos(responseF.Data);
-                        lblCountFijo.Text = $"REGISTROS PERSONAL : {huellaData.Fijos.Count}";
+                        lblCountFijo.Text = $"Registros Personal : {huellaData.Fijos.Count}";
                     }
 
                     var responseEvent = await api.FingerPrintsListEvent(new { DefaultKeyEmpresa = DataSession.DKey });
                     if (responseEvent.Success)
                     {
                         huellaData.SetProfesionales(responseEvent.Data);
-                        lblCountEvent.Text = $"REGISTROS PROFESIONALES : {huellaData.Profesionales.Count}";
+                        lblCountEvent.Text = $"Registros Profesionales : {huellaData.Profesionales.Count}";
                     }
                 }
                 else
@@ -699,7 +730,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                             if (responseF.Success)
                             {
                                 huellaData.SetFijos(responseF.Data);
-                                lblCountFijo.Text = $"REGISTROS PERSONAL : {huellaData.Fijos.Count}";
+                                lblCountFijo.Text = $"Registros Personal  : {huellaData.Fijos.Count}";
                             }
                             break;
                         case 3:
@@ -707,7 +738,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                             if (responseEvent.Success)
                             {
                                 huellaData.SetProfesionales(responseEvent.Data);
-                                lblCountEvent.Text = $"REGISTROS PROFESIONALES : {huellaData.Profesionales.Count}";
+                                lblCountEvent.Text = $"Registros Profesionales : {huellaData.Profesionales.Count}";
                             }
                             break;
                         default:
@@ -715,7 +746,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                             if (response.Success)
                             {
                                 huellaData.SetSocios(response.Data);
-                                lblCount.Text = $"CANTIDAD REGISTROS : {huellaData.Socios.Count}";
+                                lblCount.Text = $"Cant. Registros : {huellaData.Socios.Count}";
                             }
                             break;
                     }
@@ -745,21 +776,29 @@ namespace ZKTecoFingerPrintScanner_Implementation
         }
 
 
-        private void StatusMessage(string message, bool success)
+        private void StatusMessage(string message, bool success, bool reset = false)
         {
 
             try
             {
-                lblMessage.Message = message;
-                lblMessage.StatusBarForeColor = Color.White;
-                if (success)
+                if (reset)
                 {
-
-                    lblMessage.StatusBarBackColor = Color.FromArgb(79, 208, 154);
+                    lblMessage.Message = "";
+                    lblMessage.StatusBarBackColor = Color.White;
                 }
                 else
                 {
-                    lblMessage.StatusBarBackColor = Color.FromArgb(230, 112, 134);
+                    lblMessage.Message = message;
+                    lblMessage.StatusBarForeColor = Color.White;
+                    if (success)
+                    {
+
+                        lblMessage.StatusBarBackColor = Color.FromArgb(79, 208, 154);
+                    }
+                    else
+                    {
+                        lblMessage.StatusBarBackColor = Color.FromArgb(230, 112, 134);
+                    }
                 }
             }
             catch (Exception ex)
@@ -899,7 +938,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
-            { 
+            {
                 HorarioSigleton hinstnc = HorarioSigleton.Instance;
 
                 if (TabControl.SelectedTab == tabPage1)
@@ -908,7 +947,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     managementZk.SetIsRegister(false);
                     stGlobal.TypeMatch = 1;
                     clearMA();
-                    lblDev.Text = stGlobal.TypeMatch.ToString();
+
+                    listBox1.Items.Clear();
+                    listBox2.Items.Clear();
                 }
                 if (TabControl.SelectedTab == tabPage2)
                 {
@@ -928,12 +969,13 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     managementZk.SetIsRegister(false);
                     rbTMFijo.Checked = true;
                     stGlobal.TypeMatch = 2;
-                    lblDev.Text = stGlobal.TypeMatch.ToString();
+
                     hinstnc.SelectedPersonal = false;
                     TOneControl(new HorarioFijo(), true);
                     TTwoControl(new HorarioFijo(), true);
                     StatusMessageD("", false, true);
-                    InfoPersonal(new SocioModel(),true);
+                    InfoPersonal(new SocioModel(), true);
+                    StatusMessage("", false, true);
                 }
             }
             catch (Exception ex)
@@ -942,7 +984,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
         }
 
-       
+
 
         private void BtnDisconnection_Click(object sender, EventArgs e)
         {
@@ -1331,8 +1373,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 hsigleton.SelectedPersonal = false;
                 TOneControl(new HorarioFijo(), true);
                 TTwoControl(new HorarioFijo(), true);
-                StatusMessageD("", false,true);
+                StatusMessageD("", false, true);
                 InfoPersonal(new SocioModel(), true);
+                StatusMessage("", false, true);
 
             }
         }
@@ -1347,9 +1390,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 pbAPHuella.Image = BIOCHECK.Properties.Resources.huell;
                 lboxProfesionales.Items.Clear();
                 HorarioSigleton hsigleton = HorarioSigleton.Instance;
-                hsigleton.SelectedPersonal= false;
+                hsigleton.SelectedPersonal = false;
                 StatusMessageD("", false, true);
                 InfoPersonal(new SocioModel(), true);
+                StatusMessage("", false, true);
             }
         }
 
@@ -1419,7 +1463,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
             else
             {
-                StatusMessageD($"", false, true);
+                StatusMessageD($"xxxx", false, true);
                 MessageBox.Show("DEBE SELECIONAR UNA CLASE");
             }
         }
@@ -1477,6 +1521,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             _ = MarckPersonalFijoAsync(8);
         }
 
-       
+
     }
 }
