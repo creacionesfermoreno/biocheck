@@ -30,15 +30,14 @@ namespace ZKTecoFingerPrintScanner_Implementation
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScreenHome));
-            this.lblSerie = new MaterialSkin.Controls.MaterialLabel();
             this.btnMarkAsistence = new System.Windows.Forms.Button();
             this.TabSelector = new MaterialSkin.Controls.MaterialTabSelector();
             this.TabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.label46 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.panel43 = new System.Windows.Forms.Panel();
@@ -119,7 +118,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblDeudaProductos = new System.Windows.Forms.Label();
             this.lblDeudaMembresia = new System.Windows.Forms.Label();
             this.lblMessageMem = new System.Windows.Forms.Label();
-            this.lblDev = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblFullName_ = new System.Windows.Forms.Label();
@@ -212,29 +210,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.PicCLogo = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.panelPFijoContent = new System.Windows.Forms.Panel();
-            this.label49 = new System.Windows.Forms.Label();
-            this.pTurno1 = new System.Windows.Forms.Panel();
-            this.lblT1M4 = new System.Windows.Forms.Label();
-            this.lblT1M3 = new System.Windows.Forms.Label();
-            this.lblT1M2 = new System.Windows.Forms.Label();
-            this.lblT1M1 = new System.Windows.Forms.Label();
-            this.btnMarcarSalidaT1 = new System.Windows.Forms.Button();
-            this.btnMarcarFBT1 = new System.Windows.Forms.Button();
-            this.btnMarcarIBT1 = new System.Windows.Forms.Button();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.btnMarcarEntradaT1 = new System.Windows.Forms.Button();
-            this.pTurno2 = new System.Windows.Forms.Panel();
-            this.lblT2M4 = new System.Windows.Forms.Label();
-            this.lblT2M3 = new System.Windows.Forms.Label();
-            this.lblT2M2 = new System.Windows.Forms.Label();
-            this.lblT2M1 = new System.Windows.Forms.Label();
-            this.btnMarcarSalidaT2 = new System.Windows.Forms.Button();
-            this.btnMarcarFBT2 = new System.Windows.Forms.Button();
-            this.btnMarcarIBT2 = new System.Windows.Forms.Button();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.btnMarcarEntradaT2 = new System.Windows.Forms.Button();
-            this.label39 = new System.Windows.Forms.Label();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.panelPProfeContent = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -260,6 +235,29 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.panelPFijoContent = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.pTurno1 = new System.Windows.Forms.Panel();
+            this.lblT1M4 = new System.Windows.Forms.Label();
+            this.lblT1M3 = new System.Windows.Forms.Label();
+            this.lblT1M2 = new System.Windows.Forms.Label();
+            this.lblT1M1 = new System.Windows.Forms.Label();
+            this.btnMarcarSalidaT1 = new System.Windows.Forms.Button();
+            this.btnMarcarFBT1 = new System.Windows.Forms.Button();
+            this.btnMarcarIBT1 = new System.Windows.Forms.Button();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.btnMarcarEntradaT1 = new System.Windows.Forms.Button();
+            this.pTurno2 = new System.Windows.Forms.Panel();
+            this.lblT2M4 = new System.Windows.Forms.Label();
+            this.lblT2M3 = new System.Windows.Forms.Label();
+            this.lblT2M2 = new System.Windows.Forms.Label();
+            this.lblT2M1 = new System.Windows.Forms.Label();
+            this.btnMarcarSalidaT2 = new System.Windows.Forms.Button();
+            this.btnMarcarFBT2 = new System.Windows.Forms.Button();
+            this.btnMarcarIBT2 = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.btnMarcarEntradaT2 = new System.Windows.Forms.Button();
+            this.label39 = new System.Windows.Forms.Label();
             this.dgvMembresias = new System.Windows.Forms.DataGridView();
             this.NombrePaquete = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FCrecionText = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -274,9 +272,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.NroContrato = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AsesorComercial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CodigoSede = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblGym = new System.Windows.Forms.Label();
-            this.lblRubro = new System.Windows.Forms.Label();
-            this.picGymLogo = new System.Windows.Forms.PictureBox();
             this.panelDeviseConnect = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PicCloseHome = new System.Windows.Forms.PictureBox();
@@ -295,21 +290,21 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblDate = new System.Windows.Forms.Label();
             this.lblHour = new System.Windows.Forms.Label();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
+            this.lblGym = new System.Windows.Forms.Label();
+            this.lblRubro = new System.Windows.Forms.Label();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.picGymLogo = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.panelDeviceConnect = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
+            this.lblSerie = new System.Windows.Forms.Label();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.statusBar1 = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
-            this.lblMessage = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.timerNow = new System.Windows.Forms.Timer(this.components);
+            this.statusBar1 = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
+            this.lblMessage = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
@@ -395,11 +390,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCLogo)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.panelPFijoContent.SuspendLayout();
-            this.pTurno1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.pTurno2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.tableLayoutPanel24.SuspendLayout();
             this.panelPProfeContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -412,8 +402,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAPHuella)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panelPFijoContent.SuspendLayout();
+            this.pTurno1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.pTurno2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembresias)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGymLogo)).BeginInit();
             this.panelDeviseConnect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCloseHome)).BeginInit();
@@ -426,29 +420,13 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel22.SuspendLayout();
             this.tableLayoutPanel21.SuspendLayout();
             this.tableLayoutPanel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGymLogo)).BeginInit();
             this.tableLayoutPanel19.SuspendLayout();
             this.panelDeviceConnect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             this.tableLayoutPanel15.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblSerie
-            // 
-            this.lblSerie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSerie.AutoSize = true;
-            this.lblSerie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.lblSerie.Depth = 0;
-            this.lblSerie.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lblSerie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSerie.Location = new System.Drawing.Point(64, 26);
-            this.lblSerie.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lblSerie.Name = "lblSerie";
-            this.lblSerie.Size = new System.Drawing.Size(134, 19);
-            this.lblSerie.TabIndex = 3;
-            this.lblSerie.Text = "Estado dispositivo";
             // 
             // btnMarkAsistence
             // 
@@ -524,9 +502,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel18.Controls.Add(this.label46, 1, 0);
+            this.tableLayoutPanel18.Controls.Add(this.listBox2, 1, 1);
             this.tableLayoutPanel18.Controls.Add(this.label42, 0, 0);
-            this.tableLayoutPanel18.Controls.Add(this.listBox2, 0, 1);
-            this.tableLayoutPanel18.Controls.Add(this.listBox1, 1, 1);
+            this.tableLayoutPanel18.Controls.Add(this.listBox1, 0, 1);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel18.Location = new System.Drawing.Point(304, 690);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
@@ -548,6 +526,17 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.label46.TabIndex = 67;
             this.label46.Text = "Mensajes Incidencias";
             // 
+            // listBox2
+            // 
+            this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 19;
+            this.listBox2.Location = new System.Drawing.Point(447, 58);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(438, 133);
+            this.listBox2.TabIndex = 64;
+            // 
             // label42
             // 
             this.label42.AutoSize = true;
@@ -561,20 +550,13 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.label42.TabIndex = 66;
             this.label42.Text = "Últimas Asistencias";
             // 
-            // listBox2
-            // 
-            this.listBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(3, 58);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(438, 133);
-            this.listBox2.TabIndex = 64;
-            // 
             // listBox1
             // 
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(447, 58);
+            this.listBox1.ItemHeight = 19;
+            this.listBox1.Location = new System.Drawing.Point(3, 58);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(438, 133);
             this.listBox1.TabIndex = 63;
@@ -668,7 +650,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.83502F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.16498F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 197F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 261F));
             this.tableLayoutPanel7.Controls.Add(this.panel18, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.panel19, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox26, 2, 0);
@@ -693,7 +675,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel18.Controls.Add(this.panel20);
             this.panel18.Location = new System.Drawing.Point(3, 3);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(366, 324);
+            this.panel18.Size = new System.Drawing.Size(331, 324);
             this.panel18.TabIndex = 0;
             // 
             // panel39
@@ -706,7 +688,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel39.Controls.Add(this.pictureBox23);
             this.panel39.Location = new System.Drawing.Point(22, 266);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(344, 50);
+            this.panel39.Size = new System.Drawing.Size(309, 50);
             this.panel39.TabIndex = 76;
             // 
             // panel40
@@ -717,7 +699,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel40.Controls.Add(this.txtMContrato);
             this.panel40.Location = new System.Drawing.Point(168, 0);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(176, 50);
+            this.panel40.Size = new System.Drawing.Size(141, 50);
             this.panel40.TabIndex = 4;
             // 
             // txtMContrato
@@ -761,7 +743,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel35.Controls.Add(this.pictureBox21);
             this.panel35.Location = new System.Drawing.Point(22, 205);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(344, 50);
+            this.panel35.Size = new System.Drawing.Size(309, 50);
             this.panel35.TabIndex = 75;
             // 
             // panel36
@@ -772,7 +754,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel36.Controls.Add(this.txtMDebe);
             this.panel36.Location = new System.Drawing.Point(168, 0);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(176, 50);
+            this.panel36.Size = new System.Drawing.Size(141, 50);
             this.panel36.TabIndex = 4;
             // 
             // txtMDebe
@@ -816,7 +798,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel31.Controls.Add(this.pictureBox19);
             this.panel31.Location = new System.Drawing.Point(22, 140);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(344, 50);
+            this.panel31.Size = new System.Drawing.Size(309, 50);
             this.panel31.TabIndex = 74;
             // 
             // panel32
@@ -827,7 +809,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel32.Controls.Add(this.txtMAcuenta);
             this.panel32.Location = new System.Drawing.Point(168, 0);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(176, 50);
+            this.panel32.Size = new System.Drawing.Size(141, 50);
             this.panel32.TabIndex = 4;
             // 
             // txtMAcuenta
@@ -871,7 +853,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel27.Controls.Add(this.pictureBox17);
             this.panel27.Location = new System.Drawing.Point(22, 79);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(342, 50);
+            this.panel27.Size = new System.Drawing.Size(307, 50);
             this.panel27.TabIndex = 73;
             // 
             // panel28
@@ -882,7 +864,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel28.Controls.Add(this.txtMPrecio);
             this.panel28.Location = new System.Drawing.Point(168, 0);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(174, 50);
+            this.panel28.Size = new System.Drawing.Size(139, 50);
             this.panel28.TabIndex = 4;
             // 
             // txtMPrecio
@@ -926,7 +908,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel20.Controls.Add(this.pictureBox14);
             this.panel20.Location = new System.Drawing.Point(22, 14);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(342, 50);
+            this.panel20.Size = new System.Drawing.Size(307, 50);
             this.panel20.TabIndex = 72;
             // 
             // panel22
@@ -937,7 +919,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel22.Controls.Add(this.txtMFInicio);
             this.panel22.Location = new System.Drawing.Point(168, 0);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(173, 50);
+            this.panel22.Size = new System.Drawing.Size(138, 50);
             this.panel22.TabIndex = 4;
             // 
             // txtMFInicio
@@ -981,9 +963,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel19.Controls.Add(this.panel33);
             this.panel19.Controls.Add(this.panel29);
             this.panel19.Controls.Add(this.panel21);
-            this.panel19.Location = new System.Drawing.Point(375, 3);
+            this.panel19.Location = new System.Drawing.Point(340, 3);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(313, 324);
+            this.panel19.Size = new System.Drawing.Size(283, 324);
             this.panel19.TabIndex = 1;
             // 
             // panel41
@@ -996,7 +978,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel41.Controls.Add(this.pictureBox24);
             this.panel41.Location = new System.Drawing.Point(3, 266);
             this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(306, 50);
+            this.panel41.Size = new System.Drawing.Size(276, 50);
             this.panel41.TabIndex = 77;
             // 
             // panel42
@@ -1007,7 +989,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel42.Controls.Add(this.txtMSede);
             this.panel42.Location = new System.Drawing.Point(147, 0);
             this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(159, 50);
+            this.panel42.Size = new System.Drawing.Size(129, 50);
             this.panel42.TabIndex = 4;
             // 
             // txtMSede
@@ -1051,7 +1033,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel37.Controls.Add(this.pictureBox22);
             this.panel37.Location = new System.Drawing.Point(3, 205);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(306, 50);
+            this.panel37.Size = new System.Drawing.Size(276, 50);
             this.panel37.TabIndex = 76;
             // 
             // panel38
@@ -1062,7 +1044,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel38.Controls.Add(this.txtMFrezingActual);
             this.panel38.Location = new System.Drawing.Point(180, 0);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(126, 50);
+            this.panel38.Size = new System.Drawing.Size(96, 50);
             this.panel38.TabIndex = 4;
             // 
             // txtMFrezingActual
@@ -1106,7 +1088,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel33.Controls.Add(this.pictureBox20);
             this.panel33.Location = new System.Drawing.Point(3, 140);
             this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(306, 50);
+            this.panel33.Size = new System.Drawing.Size(276, 50);
             this.panel33.TabIndex = 75;
             // 
             // panel34
@@ -1117,7 +1099,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel34.Controls.Add(this.txtMFrezingTom);
             this.panel34.Location = new System.Drawing.Point(174, 0);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(132, 50);
+            this.panel34.Size = new System.Drawing.Size(102, 50);
             this.panel34.TabIndex = 4;
             // 
             // txtMFrezingTom
@@ -1161,7 +1143,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel29.Controls.Add(this.pictureBox18);
             this.panel29.Location = new System.Drawing.Point(3, 79);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(307, 50);
+            this.panel29.Size = new System.Drawing.Size(277, 50);
             this.panel29.TabIndex = 74;
             // 
             // panel30
@@ -1172,7 +1154,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel30.Controls.Add(this.txtMFrezing);
             this.panel30.Location = new System.Drawing.Point(147, 0);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(163, 50);
+            this.panel30.Size = new System.Drawing.Size(133, 50);
             this.panel30.TabIndex = 4;
             // 
             // txtMFrezing
@@ -1216,7 +1198,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel21.Controls.Add(this.pictureBox15);
             this.panel21.Location = new System.Drawing.Point(3, 14);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(307, 50);
+            this.panel21.Size = new System.Drawing.Size(277, 50);
             this.panel21.TabIndex = 73;
             // 
             // panel23
@@ -1227,7 +1209,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel23.Controls.Add(this.txtMFin);
             this.panel23.Location = new System.Drawing.Point(147, 0);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(159, 50);
+            this.panel23.Size = new System.Drawing.Size(129, 50);
             this.panel23.TabIndex = 6;
             // 
             // txtMFin
@@ -1267,9 +1249,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox26.Image = global::BIOCHECK.Properties.Resources.person;
-            this.pictureBox26.Location = new System.Drawing.Point(694, 3);
+            this.pictureBox26.Location = new System.Drawing.Point(629, 3);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(191, 324);
+            this.pictureBox26.Size = new System.Drawing.Size(256, 324);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 2;
             this.pictureBox26.TabStop = false;
@@ -1362,7 +1344,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.17586F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.82414F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 281F));
             this.tableLayoutPanel5.Controls.Add(this.panel17, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblPlan, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.txtMPromo, 1, 2);
@@ -1383,7 +1365,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel17.Controls.Add(this.label12);
             this.panel17.Location = new System.Drawing.Point(3, 17);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(274, 55);
+            this.panel17.Size = new System.Drawing.Size(250, 55);
             this.panel17.TabIndex = 68;
             // 
             // pictureBox13
@@ -1414,9 +1396,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblPlan.AutoSize = true;
             this.lblPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(28)))), ((int)(((byte)(70)))));
-            this.lblPlan.Location = new System.Drawing.Point(286, 14);
+            this.lblPlan.Location = new System.Drawing.Point(259, 14);
             this.lblPlan.Name = "lblPlan";
-            this.lblPlan.Size = new System.Drawing.Size(382, 61);
+            this.lblPlan.Size = new System.Drawing.Size(344, 61);
             this.lblPlan.TabIndex = 69;
             this.lblPlan.Text = "PLAN PRUEBA APPSFIT";
             this.lblPlan.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1428,10 +1410,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.txtMPromo.AutoSize = true;
             this.txtMPromo.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMPromo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(146)))), ((int)(((byte)(146)))));
-            this.txtMPromo.Location = new System.Drawing.Point(286, 75);
+            this.txtMPromo.Location = new System.Drawing.Point(259, 75);
             this.txtMPromo.Name = "txtMPromo";
             this.txtMPromo.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.txtMPromo.Size = new System.Drawing.Size(382, 25);
+            this.txtMPromo.Size = new System.Drawing.Size(344, 25);
             this.txtMPromo.TabIndex = 70;
             this.txtMPromo.Text = "Paquete prueba 1 mes";
             // 
@@ -1458,7 +1440,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel16.Controls.Add(this.lblDeudaProductos);
             this.panel16.Controls.Add(this.lblDeudaMembresia);
             this.panel16.Controls.Add(this.lblMessageMem);
-            this.panel16.Controls.Add(this.lblDev);
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
@@ -1509,19 +1490,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblMessageMem.TabIndex = 10;
             this.lblMessageMem.Text = "ESTADO MEMBRESIA";
             this.lblMessageMem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblDev
-            // 
-            this.lblDev.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDev.AutoSize = true;
-            this.lblDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDev.ForeColor = System.Drawing.Color.Transparent;
-            this.lblDev.Location = new System.Drawing.Point(359, 28);
-            this.lblDev.Name = "lblDev";
-            this.lblDev.Size = new System.Drawing.Size(82, 25);
-            this.lblDev.TabIndex = 36;
-            this.lblDev.Text = "label12";
             // 
             // panel3
             // 
@@ -1873,12 +1841,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(3, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(121, 19);
+            this.materialLabel2.Size = new System.Drawing.Size(121, 18);
             this.materialLabel2.TabIndex = 4;
             this.materialLabel2.Text = "Codigo :";
             // 
@@ -1888,12 +1856,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel3.Location = new System.Drawing.Point(3, 38);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(121, 19);
+            this.materialLabel3.Size = new System.Drawing.Size(121, 18);
             this.materialLabel3.TabIndex = 5;
             this.materialLabel3.Text = "Nombres :";
             // 
@@ -1903,12 +1871,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel4.Location = new System.Drawing.Point(3, 76);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(121, 19);
+            this.materialLabel4.Size = new System.Drawing.Size(121, 18);
             this.materialLabel4.TabIndex = 6;
             this.materialLabel4.Text = "Apellidos :";
             // 
@@ -1918,12 +1886,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel5.Location = new System.Drawing.Point(3, 111);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(121, 38);
+            this.materialLabel5.Size = new System.Drawing.Size(121, 18);
             this.materialLabel5.TabIndex = 7;
             this.materialLabel5.Text = "Nro documento :";
             // 
@@ -2715,6 +2683,337 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tabPage4.Text = "Asistencia personal";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel24
+            // 
+            this.tableLayoutPanel24.ColumnCount = 1;
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel24.Controls.Add(this.panelPProfeContent, 0, 0);
+            this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel24.Location = new System.Drawing.Point(304, 0);
+            this.tableLayoutPanel24.Name = "tableLayoutPanel24";
+            this.tableLayoutPanel24.RowCount = 1;
+            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel24.Size = new System.Drawing.Size(888, 397);
+            this.tableLayoutPanel24.TabIndex = 33;
+            // 
+            // panelPProfeContent
+            // 
+            this.panelPProfeContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPProfeContent.Controls.Add(this.label13);
+            this.panelPProfeContent.Controls.Add(this.lboxProfesionales);
+            this.panelPProfeContent.Controls.Add(this.pictureBox11);
+            this.panelPProfeContent.Controls.Add(this.label36);
+            this.panelPProfeContent.Controls.Add(this.btnMSalidaProf);
+            this.panelPProfeContent.Controls.Add(this.btnMIngresoProf);
+            this.panelPProfeContent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelPProfeContent.Location = new System.Drawing.Point(50, 15);
+            this.panelPProfeContent.Margin = new System.Windows.Forms.Padding(50, 15, 3, 3);
+            this.panelPProfeContent.Name = "panelPProfeContent";
+            this.panelPProfeContent.Size = new System.Drawing.Size(835, 379);
+            this.panelPProfeContent.TabIndex = 32;
+            this.panelPProfeContent.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label13.Location = new System.Drawing.Point(32, 57);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(309, 34);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "En el listado de horarios, debe seleccionar una \r\nclase para (Marcar Ingreso / Ma" +
+    "rcar Salida).";
+            // 
+            // lboxProfesionales
+            // 
+            this.lboxProfesionales.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lboxProfesionales.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lboxProfesionales.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lboxProfesionales.FormattingEnabled = true;
+            this.lboxProfesionales.ItemHeight = 19;
+            this.lboxProfesionales.Location = new System.Drawing.Point(33, 119);
+            this.lboxProfesionales.Name = "lboxProfesionales";
+            this.lboxProfesionales.ScrollAlwaysVisible = true;
+            this.lboxProfesionales.Size = new System.Drawing.Size(729, 232);
+            this.lboxProfesionales.TabIndex = 30;
+            this.lboxProfesionales.SelectedIndexChanged += new System.EventHandler(this.lboxProfesionales_SelectedIndexChanged);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::BIOCHECK.Properties.Resources.inform;
+            this.pictureBox11.Location = new System.Drawing.Point(33, 14);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 9;
+            this.pictureBox11.TabStop = false;
+            // 
+            // label36
+            // 
+            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.label36.Location = new System.Drawing.Point(79, 24);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(56, 20);
+            this.label36.TabIndex = 8;
+            this.label36.Text = "NOTA";
+            // 
+            // btnMSalidaProf
+            // 
+            this.btnMSalidaProf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMSalidaProf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMSalidaProf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMSalidaProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMSalidaProf.ForeColor = System.Drawing.Color.White;
+            this.btnMSalidaProf.Image = global::BIOCHECK.Properties.Resources.left;
+            this.btnMSalidaProf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMSalidaProf.Location = new System.Drawing.Point(593, 49);
+            this.btnMSalidaProf.Name = "btnMSalidaProf";
+            this.btnMSalidaProf.Size = new System.Drawing.Size(169, 40);
+            this.btnMSalidaProf.TabIndex = 9;
+            this.btnMSalidaProf.Text = "Marcar Salida";
+            this.btnMSalidaProf.UseVisualStyleBackColor = false;
+            this.btnMSalidaProf.Click += new System.EventHandler(this.btnMSalidaProf_Click);
+            // 
+            // btnMIngresoProf
+            // 
+            this.btnMIngresoProf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMIngresoProf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMIngresoProf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMIngresoProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMIngresoProf.ForeColor = System.Drawing.Color.White;
+            this.btnMIngresoProf.Image = global::BIOCHECK.Properties.Resources.right;
+            this.btnMIngresoProf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMIngresoProf.Location = new System.Drawing.Point(381, 49);
+            this.btnMIngresoProf.Name = "btnMIngresoProf";
+            this.btnMIngresoProf.Size = new System.Drawing.Size(169, 40);
+            this.btnMIngresoProf.TabIndex = 9;
+            this.btnMIngresoProf.Text = "Marcar Ingreso";
+            this.btnMIngresoProf.UseVisualStyleBackColor = false;
+            this.btnMIngresoProf.Click += new System.EventHandler(this.btnMIngresoProf_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.panel1.Controls.Add(this.panelCAUser);
+            this.panel1.Controls.Add(this.panelAPHuella);
+            this.panel1.Controls.Add(this.label35);
+            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Controls.Add(this.label34);
+            this.panel1.Controls.Add(this.label33);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(304, 884);
+            this.panel1.TabIndex = 0;
+            // 
+            // panelCAUser
+            // 
+            this.panelCAUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelCAUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panelCAUser.Controls.Add(this.tableLayoutPanel23);
+            this.panelCAUser.Controls.Add(this.pboxPImage);
+            this.panelCAUser.Location = new System.Drawing.Point(33, 543);
+            this.panelCAUser.Name = "panelCAUser";
+            this.panelCAUser.Size = new System.Drawing.Size(227, 283);
+            this.panelCAUser.TabIndex = 7;
+            // 
+            // tableLayoutPanel23
+            // 
+            this.tableLayoutPanel23.ColumnCount = 3;
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel23.Controls.Add(this.lblPName, 1, 0);
+            this.tableLayoutPanel23.Controls.Add(this.lblPPhone, 1, 2);
+            this.tableLayoutPanel23.Controls.Add(this.lblPCargo, 1, 1);
+            this.tableLayoutPanel23.Location = new System.Drawing.Point(3, 157);
+            this.tableLayoutPanel23.Name = "tableLayoutPanel23";
+            this.tableLayoutPanel23.RowCount = 3;
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.08696F));
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.91304F));
+            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel23.Size = new System.Drawing.Size(221, 113);
+            this.tableLayoutPanel23.TabIndex = 33;
+            // 
+            // lblPName
+            // 
+            this.lblPName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPName.AutoSize = true;
+            this.lblPName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPName.Location = new System.Drawing.Point(31, 0);
+            this.lblPName.Name = "lblPName";
+            this.lblPName.Size = new System.Drawing.Size(141, 42);
+            this.lblPName.TabIndex = 30;
+            this.lblPName.Text = "NOMBRE, APELLIDOS";
+            this.lblPName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblPPhone
+            // 
+            this.lblPPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPPhone.AutoSize = true;
+            this.lblPPhone.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPPhone.Location = new System.Drawing.Point(31, 92);
+            this.lblPPhone.Name = "lblPPhone";
+            this.lblPPhone.Size = new System.Drawing.Size(141, 17);
+            this.lblPPhone.TabIndex = 32;
+            this.lblPPhone.Text = "CELULAR";
+            this.lblPPhone.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblPCargo
+            // 
+            this.lblPCargo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPCargo.AutoSize = true;
+            this.lblPCargo.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCargo.Location = new System.Drawing.Point(31, 70);
+            this.lblPCargo.Name = "lblPCargo";
+            this.lblPCargo.Size = new System.Drawing.Size(141, 17);
+            this.lblPCargo.TabIndex = 31;
+            this.lblPCargo.Text = "CARGO";
+            this.lblPCargo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pboxPImage
+            // 
+            this.pboxPImage.Image = global::BIOCHECK.Properties.Resources.user2;
+            this.pboxPImage.Location = new System.Drawing.Point(35, 18);
+            this.pboxPImage.Name = "pboxPImage";
+            this.pboxPImage.Size = new System.Drawing.Size(152, 133);
+            this.pboxPImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxPImage.TabIndex = 0;
+            this.pboxPImage.TabStop = false;
+            // 
+            // panelAPHuella
+            // 
+            this.panelAPHuella.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panelAPHuella.Controls.Add(this.gbAPTipoUser);
+            this.panelAPHuella.Controls.Add(this.panel13);
+            this.panelAPHuella.Location = new System.Drawing.Point(33, 191);
+            this.panelAPHuella.Name = "panelAPHuella";
+            this.panelAPHuella.Size = new System.Drawing.Size(227, 158);
+            this.panelAPHuella.TabIndex = 6;
+            // 
+            // gbAPTipoUser
+            // 
+            this.gbAPTipoUser.Controls.Add(this.rbTMEvent);
+            this.gbAPTipoUser.Controls.Add(this.rbTMFijo);
+            this.gbAPTipoUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbAPTipoUser.Location = new System.Drawing.Point(3, 16);
+            this.gbAPTipoUser.Name = "gbAPTipoUser";
+            this.gbAPTipoUser.Size = new System.Drawing.Size(113, 125);
+            this.gbAPTipoUser.TabIndex = 1;
+            this.gbAPTipoUser.TabStop = false;
+            this.gbAPTipoUser.Text = "Tipo Usuario";
+            // 
+            // rbTMEvent
+            // 
+            this.rbTMEvent.AutoSize = true;
+            this.rbTMEvent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbTMEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbTMEvent.Location = new System.Drawing.Point(6, 60);
+            this.rbTMEvent.Name = "rbTMEvent";
+            this.rbTMEvent.Size = new System.Drawing.Size(110, 17);
+            this.rbTMEvent.TabIndex = 1;
+            this.rbTMEvent.TabStop = true;
+            this.rbTMEvent.Text = "Personal eventual";
+            this.rbTMEvent.UseVisualStyleBackColor = true;
+            this.rbTMEvent.CheckedChanged += new System.EventHandler(this.rbTMEvent_CheckedChanged);
+            // 
+            // rbTMFijo
+            // 
+            this.rbTMFijo.AutoSize = true;
+            this.rbTMFijo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbTMFijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbTMFijo.Location = new System.Drawing.Point(6, 29);
+            this.rbTMFijo.Name = "rbTMFijo";
+            this.rbTMFijo.Size = new System.Drawing.Size(82, 17);
+            this.rbTMFijo.TabIndex = 0;
+            this.rbTMFijo.TabStop = true;
+            this.rbTMFijo.Text = "Personal fijo";
+            this.rbTMFijo.UseVisualStyleBackColor = true;
+            this.rbTMFijo.CheckedChanged += new System.EventHandler(this.rbTMFijo_CheckedChanged);
+            // 
+            // panel13
+            // 
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.pbAPHuella);
+            this.panel13.Location = new System.Drawing.Point(122, 16);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(95, 125);
+            this.panel13.TabIndex = 0;
+            // 
+            // pbAPHuella
+            // 
+            this.pbAPHuella.Image = global::BIOCHECK.Properties.Resources.huell;
+            this.pbAPHuella.InitialImage = global::BIOCHECK.Properties.Resources.huell;
+            this.pbAPHuella.Location = new System.Drawing.Point(6, 3);
+            this.pbAPHuella.Name = "pbAPHuella";
+            this.pbAPHuella.Size = new System.Drawing.Size(82, 117);
+            this.pbAPHuella.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAPHuella.TabIndex = 0;
+            this.pbAPHuella.TabStop = false;
+            // 
+            // label35
+            // 
+            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(30, 136);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(253, 34);
+            this.label35.TabIndex = 5;
+            this.label35.Text = "Asegúrate de presionar y colocar bien \r\ntu huella. ¡Gracias!";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::BIOCHECK.Properties.Resources.advertencia;
+            this.pictureBox9.Location = new System.Drawing.Point(33, 93);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 4;
+            this.pictureBox9.TabStop = false;
+            // 
+            // label34
+            // 
+            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(100)))));
+            this.label34.Location = new System.Drawing.Point(81, 106);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(95, 13);
+            this.label34.TabIndex = 3;
+            this.label34.Text = "INDICACIONES";
+            // 
+            // label33
+            // 
+            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(53, 20);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(207, 44);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Control de Asistencia \nPersonal";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panelPFijoContent
             // 
             this.panelPFijoContent.Controls.Add(this.label49);
@@ -3036,334 +3335,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.label39.TabIndex = 28;
             this.label39.Text = "Turno 1";
             // 
-            // tableLayoutPanel24
-            // 
-            this.tableLayoutPanel24.ColumnCount = 1;
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.Controls.Add(this.panelPProfeContent, 0, 0);
-            this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(304, 0);
-            this.tableLayoutPanel24.Name = "tableLayoutPanel24";
-            this.tableLayoutPanel24.RowCount = 1;
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(888, 397);
-            this.tableLayoutPanel24.TabIndex = 33;
-            // 
-            // panelPProfeContent
-            // 
-            this.panelPProfeContent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelPProfeContent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPProfeContent.Controls.Add(this.label13);
-            this.panelPProfeContent.Controls.Add(this.lboxProfesionales);
-            this.panelPProfeContent.Controls.Add(this.pictureBox11);
-            this.panelPProfeContent.Controls.Add(this.label36);
-            this.panelPProfeContent.Controls.Add(this.btnMSalidaProf);
-            this.panelPProfeContent.Controls.Add(this.btnMIngresoProf);
-            this.panelPProfeContent.Location = new System.Drawing.Point(50, 15);
-            this.panelPProfeContent.Margin = new System.Windows.Forms.Padding(50, 15, 3, 3);
-            this.panelPProfeContent.Name = "panelPProfeContent";
-            this.panelPProfeContent.Size = new System.Drawing.Size(795, 379);
-            this.panelPProfeContent.TabIndex = 32;
-            this.panelPProfeContent.Visible = false;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label13.Location = new System.Drawing.Point(32, 57);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(309, 34);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "En el listado de horarios, debe seleccionar una \r\nclase para (Marcar Ingreso / Ma" +
-    "rcar Salida).";
-            // 
-            // lboxProfesionales
-            // 
-            this.lboxProfesionales.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lboxProfesionales.FormattingEnabled = true;
-            this.lboxProfesionales.Location = new System.Drawing.Point(33, 119);
-            this.lboxProfesionales.Name = "lboxProfesionales";
-            this.lboxProfesionales.ScrollAlwaysVisible = true;
-            this.lboxProfesionales.Size = new System.Drawing.Size(729, 238);
-            this.lboxProfesionales.TabIndex = 30;
-            this.lboxProfesionales.SelectedIndexChanged += new System.EventHandler(this.lboxProfesionales_SelectedIndexChanged);
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::BIOCHECK.Properties.Resources.inform;
-            this.pictureBox11.Location = new System.Drawing.Point(33, 14);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 9;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label36
-            // 
-            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.label36.Location = new System.Drawing.Point(79, 24);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(56, 20);
-            this.label36.TabIndex = 8;
-            this.label36.Text = "NOTA";
-            // 
-            // btnMSalidaProf
-            // 
-            this.btnMSalidaProf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMSalidaProf.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMSalidaProf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMSalidaProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMSalidaProf.ForeColor = System.Drawing.Color.White;
-            this.btnMSalidaProf.Image = global::BIOCHECK.Properties.Resources.left;
-            this.btnMSalidaProf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMSalidaProf.Location = new System.Drawing.Point(593, 49);
-            this.btnMSalidaProf.Name = "btnMSalidaProf";
-            this.btnMSalidaProf.Size = new System.Drawing.Size(169, 40);
-            this.btnMSalidaProf.TabIndex = 9;
-            this.btnMSalidaProf.Text = "Marcar Salida";
-            this.btnMSalidaProf.UseVisualStyleBackColor = false;
-            this.btnMSalidaProf.Click += new System.EventHandler(this.btnMSalidaProf_Click);
-            // 
-            // btnMIngresoProf
-            // 
-            this.btnMIngresoProf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMIngresoProf.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMIngresoProf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMIngresoProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMIngresoProf.ForeColor = System.Drawing.Color.White;
-            this.btnMIngresoProf.Image = global::BIOCHECK.Properties.Resources.right;
-            this.btnMIngresoProf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMIngresoProf.Location = new System.Drawing.Point(381, 49);
-            this.btnMIngresoProf.Name = "btnMIngresoProf";
-            this.btnMIngresoProf.Size = new System.Drawing.Size(169, 40);
-            this.btnMIngresoProf.TabIndex = 9;
-            this.btnMIngresoProf.Text = "Marcar Ingreso";
-            this.btnMIngresoProf.UseVisualStyleBackColor = false;
-            this.btnMIngresoProf.Click += new System.EventHandler(this.btnMIngresoProf_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.panel1.Controls.Add(this.panelCAUser);
-            this.panel1.Controls.Add(this.panelAPHuella);
-            this.panel1.Controls.Add(this.label35);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.label34);
-            this.panel1.Controls.Add(this.label33);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(304, 884);
-            this.panel1.TabIndex = 0;
-            // 
-            // panelCAUser
-            // 
-            this.panelCAUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelCAUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.panelCAUser.Controls.Add(this.tableLayoutPanel23);
-            this.panelCAUser.Controls.Add(this.pboxPImage);
-            this.panelCAUser.Location = new System.Drawing.Point(33, 543);
-            this.panelCAUser.Name = "panelCAUser";
-            this.panelCAUser.Size = new System.Drawing.Size(227, 283);
-            this.panelCAUser.TabIndex = 7;
-            // 
-            // tableLayoutPanel23
-            // 
-            this.tableLayoutPanel23.ColumnCount = 3;
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel23.Controls.Add(this.lblPName, 1, 0);
-            this.tableLayoutPanel23.Controls.Add(this.lblPPhone, 1, 2);
-            this.tableLayoutPanel23.Controls.Add(this.lblPCargo, 1, 1);
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(3, 157);
-            this.tableLayoutPanel23.Name = "tableLayoutPanel23";
-            this.tableLayoutPanel23.RowCount = 3;
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.08696F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.91304F));
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(221, 113);
-            this.tableLayoutPanel23.TabIndex = 33;
-            // 
-            // lblPName
-            // 
-            this.lblPName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPName.AutoSize = true;
-            this.lblPName.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPName.Location = new System.Drawing.Point(32, 0);
-            this.lblPName.Name = "lblPName";
-            this.lblPName.Size = new System.Drawing.Size(147, 42);
-            this.lblPName.TabIndex = 30;
-            this.lblPName.Text = "NOMBRE, APELLIDOS";
-            this.lblPName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblPPhone
-            // 
-            this.lblPPhone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPPhone.AutoSize = true;
-            this.lblPPhone.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPPhone.Location = new System.Drawing.Point(32, 92);
-            this.lblPPhone.Name = "lblPPhone";
-            this.lblPPhone.Size = new System.Drawing.Size(147, 17);
-            this.lblPPhone.TabIndex = 32;
-            this.lblPPhone.Text = "CELULAR";
-            this.lblPPhone.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblPCargo
-            // 
-            this.lblPCargo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPCargo.AutoSize = true;
-            this.lblPCargo.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPCargo.Location = new System.Drawing.Point(32, 70);
-            this.lblPCargo.Name = "lblPCargo";
-            this.lblPCargo.Size = new System.Drawing.Size(147, 17);
-            this.lblPCargo.TabIndex = 31;
-            this.lblPCargo.Text = "CARGO";
-            this.lblPCargo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pboxPImage
-            // 
-            this.pboxPImage.Image = global::BIOCHECK.Properties.Resources.user2;
-            this.pboxPImage.Location = new System.Drawing.Point(35, 18);
-            this.pboxPImage.Name = "pboxPImage";
-            this.pboxPImage.Size = new System.Drawing.Size(152, 133);
-            this.pboxPImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxPImage.TabIndex = 0;
-            this.pboxPImage.TabStop = false;
-            // 
-            // panelAPHuella
-            // 
-            this.panelAPHuella.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.panelAPHuella.Controls.Add(this.gbAPTipoUser);
-            this.panelAPHuella.Controls.Add(this.panel13);
-            this.panelAPHuella.Location = new System.Drawing.Point(33, 191);
-            this.panelAPHuella.Name = "panelAPHuella";
-            this.panelAPHuella.Size = new System.Drawing.Size(227, 158);
-            this.panelAPHuella.TabIndex = 6;
-            // 
-            // gbAPTipoUser
-            // 
-            this.gbAPTipoUser.Controls.Add(this.rbTMEvent);
-            this.gbAPTipoUser.Controls.Add(this.rbTMFijo);
-            this.gbAPTipoUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAPTipoUser.Location = new System.Drawing.Point(3, 16);
-            this.gbAPTipoUser.Name = "gbAPTipoUser";
-            this.gbAPTipoUser.Size = new System.Drawing.Size(113, 125);
-            this.gbAPTipoUser.TabIndex = 1;
-            this.gbAPTipoUser.TabStop = false;
-            this.gbAPTipoUser.Text = "Tipo Usuario";
-            // 
-            // rbTMEvent
-            // 
-            this.rbTMEvent.AutoSize = true;
-            this.rbTMEvent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbTMEvent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbTMEvent.Location = new System.Drawing.Point(6, 60);
-            this.rbTMEvent.Name = "rbTMEvent";
-            this.rbTMEvent.Size = new System.Drawing.Size(110, 17);
-            this.rbTMEvent.TabIndex = 1;
-            this.rbTMEvent.TabStop = true;
-            this.rbTMEvent.Text = "Personal eventual";
-            this.rbTMEvent.UseVisualStyleBackColor = true;
-            this.rbTMEvent.CheckedChanged += new System.EventHandler(this.rbTMEvent_CheckedChanged);
-            // 
-            // rbTMFijo
-            // 
-            this.rbTMFijo.AutoSize = true;
-            this.rbTMFijo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbTMFijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbTMFijo.Location = new System.Drawing.Point(6, 29);
-            this.rbTMFijo.Name = "rbTMFijo";
-            this.rbTMFijo.Size = new System.Drawing.Size(82, 17);
-            this.rbTMFijo.TabIndex = 0;
-            this.rbTMFijo.TabStop = true;
-            this.rbTMFijo.Text = "Personal fijo";
-            this.rbTMFijo.UseVisualStyleBackColor = true;
-            this.rbTMFijo.CheckedChanged += new System.EventHandler(this.rbTMFijo_CheckedChanged);
-            // 
-            // panel13
-            // 
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.pbAPHuella);
-            this.panel13.Location = new System.Drawing.Point(122, 16);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(95, 125);
-            this.panel13.TabIndex = 0;
-            // 
-            // pbAPHuella
-            // 
-            this.pbAPHuella.Image = global::BIOCHECK.Properties.Resources.huell;
-            this.pbAPHuella.InitialImage = global::BIOCHECK.Properties.Resources.huell;
-            this.pbAPHuella.Location = new System.Drawing.Point(6, 3);
-            this.pbAPHuella.Name = "pbAPHuella";
-            this.pbAPHuella.Size = new System.Drawing.Size(82, 117);
-            this.pbAPHuella.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbAPHuella.TabIndex = 0;
-            this.pbAPHuella.TabStop = false;
-            // 
-            // label35
-            // 
-            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(30, 136);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(253, 34);
-            this.label35.TabIndex = 5;
-            this.label35.Text = "Asegúrate de presionar y colocar bien \r\ntu huella. ¡Gracias!";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::BIOCHECK.Properties.Resources.advertencia;
-            this.pictureBox9.Location = new System.Drawing.Point(33, 93);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 4;
-            this.pictureBox9.TabStop = false;
-            // 
-            // label34
-            // 
-            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(100)))));
-            this.label34.Location = new System.Drawing.Point(81, 106);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(95, 13);
-            this.label34.TabIndex = 3;
-            this.label34.Text = "INDICACIONES";
-            // 
-            // label33
-            // 
-            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(53, 20);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(207, 44);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "Control de Asistencia \nPersonal";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // dgvMembresias
             // 
             this.dgvMembresias.Location = new System.Drawing.Point(0, 0);
@@ -3423,47 +3394,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             // 
             this.CodigoSede.Name = "CodigoSede";
             // 
-            // lblGym
-            // 
-            this.lblGym.AutoSize = true;
-            this.lblGym.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblGym.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGym.ForeColor = System.Drawing.Color.White;
-            this.lblGym.Location = new System.Drawing.Point(3, 0);
-            this.lblGym.Name = "lblGym";
-            this.lblGym.Size = new System.Drawing.Size(185, 48);
-            this.lblGym.TabIndex = 20;
-            this.lblGym.Text = "AppsFit Demo";
-            this.lblGym.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // lblRubro
-            // 
-            this.lblRubro.AutoSize = true;
-            this.lblRubro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblRubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRubro.ForeColor = System.Drawing.Color.LightGray;
-            this.lblRubro.Location = new System.Drawing.Point(3, 48);
-            this.lblRubro.Name = "lblRubro";
-            this.lblRubro.Size = new System.Drawing.Size(185, 48);
-            this.lblRubro.TabIndex = 21;
-            this.lblRubro.Text = "Gimnasío";
-            this.lblRubro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // picGymLogo
-            // 
-            this.picGymLogo.Image = ((System.Drawing.Image)(resources.GetObject("picGymLogo.Image")));
-            this.picGymLogo.Location = new System.Drawing.Point(3, 3);
-            this.picGymLogo.Name = "picGymLogo";
-            this.picGymLogo.Size = new System.Drawing.Size(96, 96);
-            this.picGymLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picGymLogo.TabIndex = 3;
-            this.picGymLogo.TabStop = false;
-            // 
             // panelDeviseConnect
             // 
             this.panelDeviseConnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.panelDeviseConnect.Controls.Add(this.pictureBox1);
-            this.panelDeviseConnect.Controls.Add(this.lblSerie);
             this.panelDeviseConnect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDeviseConnect.Location = new System.Drawing.Point(20, 35);
             this.panelDeviseConnect.Name = "panelDeviseConnect";
@@ -3514,18 +3448,18 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.96644F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.03356F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
             this.tableLayoutPanel8.Controls.Add(this.lblCountEvent, 2, 1);
             this.tableLayoutPanel8.Controls.Add(this.lblCountFijo, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.lblCount, 0, 1);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(327, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(316, 0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(434, 66);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(445, 66);
             this.tableLayoutPanel8.TabIndex = 32;
             // 
             // lblCountEvent
@@ -3534,10 +3468,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCountEvent.AutoSize = true;
             this.lblCountEvent.BackColor = System.Drawing.Color.Transparent;
             this.lblCountEvent.ForeColor = System.Drawing.Color.White;
-            this.lblCountEvent.Location = new System.Drawing.Point(274, 23);
+            this.lblCountEvent.Location = new System.Drawing.Point(246, 23);
             this.lblCountEvent.Name = "lblCountEvent";
             this.lblCountEvent.Padding = new System.Windows.Forms.Padding(5);
-            this.lblCountEvent.Size = new System.Drawing.Size(157, 23);
+            this.lblCountEvent.Size = new System.Drawing.Size(196, 23);
             this.lblCountEvent.TabIndex = 34;
             this.lblCountEvent.Text = "Registros Profesionales : 0";
             // 
@@ -3547,10 +3481,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCountFijo.AutoSize = true;
             this.lblCountFijo.BackColor = System.Drawing.Color.Transparent;
             this.lblCountFijo.ForeColor = System.Drawing.Color.White;
-            this.lblCountFijo.Location = new System.Drawing.Point(125, 23);
+            this.lblCountFijo.Location = new System.Drawing.Point(112, 23);
             this.lblCountFijo.Name = "lblCountFijo";
             this.lblCountFijo.Padding = new System.Windows.Forms.Padding(5);
-            this.lblCountFijo.Size = new System.Drawing.Size(143, 23);
+            this.lblCountFijo.Size = new System.Drawing.Size(128, 23);
             this.lblCountFijo.TabIndex = 35;
             this.lblCountFijo.Text = "Registros Personal : 0";
             // 
@@ -3563,7 +3497,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCount.Location = new System.Drawing.Point(3, 23);
             this.lblCount.Name = "lblCount";
             this.lblCount.Padding = new System.Windows.Forms.Padding(5);
-            this.lblCount.Size = new System.Drawing.Size(116, 23);
+            this.lblCount.Size = new System.Drawing.Size(103, 23);
             this.lblCount.TabIndex = 31;
             this.lblCount.Text = "Cant. Registros : 0";
             // 
@@ -3727,8 +3661,8 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel21.ColumnCount = 1;
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel21.Controls.Add(this.label48, 0, 0);
-            this.tableLayoutPanel21.Controls.Add(this.label50, 0, 1);
+            this.tableLayoutPanel21.Controls.Add(this.lblGym, 0, 0);
+            this.tableLayoutPanel21.Controls.Add(this.lblRubro, 0, 1);
             this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel21.Location = new System.Drawing.Point(415, 0);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
@@ -3739,33 +3673,33 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel21.Size = new System.Drawing.Size(200, 108);
             this.tableLayoutPanel21.TabIndex = 70;
             // 
-            // label48
+            // lblGym
             // 
-            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblGym.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Location = new System.Drawing.Point(8, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(189, 54);
-            this.label48.TabIndex = 0;
-            this.label48.Text = "GYM";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblGym.AutoSize = true;
+            this.lblGym.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGym.ForeColor = System.Drawing.Color.White;
+            this.lblGym.Location = new System.Drawing.Point(8, 0);
+            this.lblGym.Name = "lblGym";
+            this.lblGym.Size = new System.Drawing.Size(189, 54);
+            this.lblGym.TabIndex = 0;
+            this.lblGym.Text = "GYM";
+            this.lblGym.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // label50
+            // lblRubro
             // 
-            this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblRubro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.label50.Location = new System.Drawing.Point(8, 54);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(189, 20);
-            this.label50.TabIndex = 1;
-            this.label50.Text = "Gimnasio";
+            this.lblRubro.AutoSize = true;
+            this.lblRubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRubro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.lblRubro.Location = new System.Drawing.Point(8, 54);
+            this.lblRubro.Name = "lblRubro";
+            this.lblRubro.Size = new System.Drawing.Size(189, 20);
+            this.lblRubro.TabIndex = 1;
+            this.lblRubro.Text = "Gimnasio";
             // 
             // tableLayoutPanel20
             // 
@@ -3773,7 +3707,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel20.Controls.Add(this.pictureBox28, 0, 0);
+            this.tableLayoutPanel20.Controls.Add(this.picGymLogo, 0, 0);
             this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel20.Location = new System.Drawing.Point(305, 0);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
@@ -3784,16 +3718,16 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel20.Size = new System.Drawing.Size(110, 108);
             this.tableLayoutPanel20.TabIndex = 68;
             // 
-            // pictureBox28
+            // picGymLogo
             // 
-            this.pictureBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox28.Image = global::BIOCHECK.Properties.Resources.logo_empresas;
-            this.pictureBox28.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(104, 102);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 0;
-            this.pictureBox28.TabStop = false;
+            this.picGymLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picGymLogo.Image = global::BIOCHECK.Properties.Resources.logo_empresas;
+            this.picGymLogo.Location = new System.Drawing.Point(3, 3);
+            this.picGymLogo.Name = "picGymLogo";
+            this.picGymLogo.Size = new System.Drawing.Size(104, 102);
+            this.picGymLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picGymLogo.TabIndex = 0;
+            this.picGymLogo.TabStop = false;
             // 
             // tableLayoutPanel19
             // 
@@ -3814,7 +3748,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             // panelDeviceConnect
             // 
             this.panelDeviceConnect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.panelDeviceConnect.Controls.Add(this.label32);
+            this.panelDeviceConnect.Controls.Add(this.lblSerie);
             this.panelDeviceConnect.Controls.Add(this.pictureBox27);
             this.panelDeviceConnect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDeviceConnect.Location = new System.Drawing.Point(21, 35);
@@ -3822,16 +3756,16 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panelDeviceConnect.Size = new System.Drawing.Size(260, 70);
             this.panelDeviceConnect.TabIndex = 0;
             // 
-            // label32
+            // lblSerie
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.label32.Location = new System.Drawing.Point(57, 26);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(151, 20);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "Conectar dispositivo";
+            this.lblSerie.AutoSize = true;
+            this.lblSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSerie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblSerie.Location = new System.Drawing.Point(57, 26);
+            this.lblSerie.Name = "lblSerie";
+            this.lblSerie.Size = new System.Drawing.Size(151, 20);
+            this.lblSerie.TabIndex = 1;
+            this.lblSerie.Text = "Conectar dispositivo";
             // 
             // pictureBox27
             // 
@@ -3843,41 +3777,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.pictureBox27.TabIndex = 0;
             this.pictureBox27.TabStop = false;
             // 
-            // statusBar1
-            // 
-            this.statusBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.statusBar1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusBar1.Location = new System.Drawing.Point(626, 32);
-            this.statusBar1.Message = "Estado membresia";
-            this.statusBar1.MessageType = false;
-            this.statusBar1.Name = "statusBar1";
-            this.statusBar1.Size = new System.Drawing.Size(318, 26);
-            this.statusBar1.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.statusBar1.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
-            this.statusBar1.TabIndex = 1;
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.Location = new System.Drawing.Point(626, 64);
-            this.lblMessage.Message = "Estado socio ";
-            this.lblMessage.MessageType = false;
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(318, 23);
-            this.lblMessage.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblMessage.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblMessage.TabIndex = 0;
-            // 
             // tableLayoutPanel15
             // 
             this.tableLayoutPanel15.ColumnCount = 2;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.11371F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.88628F));
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel16, 1, 0);
-            this.tableLayoutPanel15.Controls.Add(this.picGymLogo, 0, 0);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel15.Location = new System.Drawing.Point(308, 0);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
@@ -3893,8 +3798,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel16.ColumnCount = 1;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Controls.Add(this.lblRubro, 0, 1);
-            this.tableLayoutPanel16.Controls.Add(this.lblGym, 0, 0);
             this.tableLayoutPanel16.Location = new System.Drawing.Point(105, 3);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 2;
@@ -3940,6 +3843,34 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.timerNow.Enabled = true;
             this.timerNow.Interval = 1000;
             this.timerNow.Tick += new System.EventHandler(this.timerNow_Tick);
+            // 
+            // statusBar1
+            // 
+            this.statusBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.statusBar1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusBar1.Location = new System.Drawing.Point(626, 32);
+            this.statusBar1.Message = "Estado membresia";
+            this.statusBar1.MessageType = false;
+            this.statusBar1.Name = "statusBar1";
+            this.statusBar1.Size = new System.Drawing.Size(330, 26);
+            this.statusBar1.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.statusBar1.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
+            this.statusBar1.TabIndex = 1;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Location = new System.Drawing.Point(626, 64);
+            this.lblMessage.Message = "Estado socio ";
+            this.lblMessage.MessageType = false;
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(329, 23);
+            this.lblMessage.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblMessage.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblMessage.TabIndex = 0;
             // 
             // ScreenHome
             // 
@@ -4078,14 +4009,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCLogo)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.panelPFijoContent.ResumeLayout(false);
-            this.panelPFijoContent.PerformLayout();
-            this.pTurno1.ResumeLayout(false);
-            this.pTurno1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.pTurno2.ResumeLayout(false);
-            this.pTurno2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.tableLayoutPanel24.ResumeLayout(false);
             this.panelPProfeContent.ResumeLayout(false);
             this.panelPProfeContent.PerformLayout();
@@ -4102,10 +4025,16 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAPHuella)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panelPFijoContent.ResumeLayout(false);
+            this.panelPFijoContent.PerformLayout();
+            this.pTurno1.ResumeLayout(false);
+            this.pTurno1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.pTurno2.ResumeLayout(false);
+            this.pTurno2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembresias)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGymLogo)).EndInit();
             this.panelDeviseConnect.ResumeLayout(false);
-            this.panelDeviseConnect.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCloseHome)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -4120,21 +4049,19 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel21.ResumeLayout(false);
             this.tableLayoutPanel21.PerformLayout();
             this.tableLayoutPanel20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGymLogo)).EndInit();
             this.tableLayoutPanel19.ResumeLayout(false);
             this.panelDeviceConnect.ResumeLayout(false);
             this.panelDeviceConnect.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             this.tableLayoutPanel15.ResumeLayout(false);
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.tableLayoutPanel16.PerformLayout();
             this.tableLayoutPanel14.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialLabel lblSerie;
+    
         private MaterialSkin.Controls.MaterialTabSelector TabSelector;
         private System.Windows.Forms.PictureBox PicCloseHome;
       
@@ -4175,9 +4102,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
        
  
-        private System.Windows.Forms.PictureBox picGymLogo;
-        private System.Windows.Forms.Label lblGym;
-        private System.Windows.Forms.Label lblRubro;
+      
+  
+     
         private System.Windows.Forms.Timer timerNow;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
@@ -4313,7 +4240,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
         private System.Windows.Forms.ListBox listBox2;
         private Controls.StatusBar lblMessage;
         private Controls.StatusBar statusBar1;
-        private System.Windows.Forms.Label lblDev;
         private System.Windows.Forms.Label lblPPhone;
         private System.Windows.Forms.Label lblPCargo;
         private System.Windows.Forms.Label lblPName;
@@ -4406,16 +4332,16 @@ namespace ZKTecoFingerPrintScanner_Implementation
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
         private System.Windows.Forms.Panel panelDeviceConnect;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label lblSerie;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        private System.Windows.Forms.PictureBox pictureBox28;
+        private System.Windows.Forms.PictureBox picGymLogo;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblHour;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label lblGym;
+        private System.Windows.Forms.Label lblRubro;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel23;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
     }
