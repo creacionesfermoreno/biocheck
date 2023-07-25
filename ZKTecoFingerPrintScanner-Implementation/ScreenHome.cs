@@ -96,6 +96,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             panelAPHuella.Region = Region.FromHrgn(CreateRoundRectRgn
                 (0, 0, panelAPHuella.Width, panelAPHuella.Height, 20, 20));
 
+            panelDeviceConnect.Region = Region.FromHrgn(CreateRoundRectRgn
+                (0, 0, panelDeviceConnect.Width, panelDeviceConnect.Height, 20, 20));
+
             //TabControl.TabPages[0].Text = "Asistencia cliente";
             //TabControl.TabPages[1].Text = "Configuracion";
             //TabControl.TabPages[2].Text = "Asistencia personal";
