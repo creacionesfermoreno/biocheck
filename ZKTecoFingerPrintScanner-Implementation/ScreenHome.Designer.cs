@@ -1,4 +1,4 @@
-﻿namespace ZKTecoFingerPrintScanner_Implementation
+namespace ZKTecoFingerPrintScanner_Implementation
 {
     partial class ScreenHome
     {
