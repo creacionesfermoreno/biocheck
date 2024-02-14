@@ -286,16 +286,19 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
                 else
                 {
+                   
 
                     if (MatchSearch)
                     {
                         HuellaData huellaData = HuellaData.Instance;
                         HorarioSigleton hinstance = HorarioSigleton.Instance;
                         bool match = false;
+                    
                         if (stGlobal.TypeMatch == 1)
                         {
                             foreach (SocioModel socio in huellaData.Socios)
                             {
+                                
                                 var storedTemplateBytes = zkfp.Base64String2Blob(socio.Huella.ToString());
                                 int ret = fpInstance.Match(CapTmp, storedTemplateBytes);
 
@@ -316,26 +319,35 @@ namespace ZKTecoFingerPrintScanner_Implementation
                         }
                         else if (stGlobal.TypeMatch == 2)
                         {
-                            foreach (SocioModel socio in huellaData.Fijos)
+                            try
                             {
-                                var storedTemplateBytes = zkfp.Base64String2Blob(socio.Huella.ToString());
-                                int ret = fpInstance.Match(CapTmp, storedTemplateBytes);
-
-                                if (ret > stGlobal.Precision)
+                                
+                                foreach (SocioModel socio in huellaData.Fijos)
                                 {
-                                    match = true;
-                                    string fullName = socio.Nombre + " " + socio.Apellidos;
+                                    var storedTemplateBytes = zkfp.Base64String2Blob(socio.Huella.ToString());
+                                    int ret = fpInstance.Match(CapTmp, storedTemplateBytes);
 
-                                    hinstance.Message = $"puntuación de éxito : {ret}/100 - ({socio.CodigoSocio}) {fullName.ToUpper()}";
-                                    await DataHorariosPersonalFijo(socio);
+                                    if (ret > stGlobal.Precision)
+                                    {
+                                        match = true;
+                                        string fullName = socio.Nombre + " " + socio.Apellidos;
+
+                                        hinstance.Message = $"puntuación de éxito : {ret}/100 - ({socio.CodigoSocio}) {fullName.ToUpper()}";
+                                        await DataHorariosPersonalFijo(socio);
+                                        return;
+                                    }
+                                }
+                                if (!match)
+                                {
+                                    hinstance.SelectedPersonal = false;
+                                    EventPersonal.Invoke("LHF-F");
                                     return;
                                 }
                             }
-                            if (!match)
+                            catch (Exception ex)
                             {
-                                hinstance.SelectedPersonal = false;
-                                EventPersonal.Invoke("LHF-F");
-                                return;
+                                createFileLog("z",ex);
+                                
                             }
                         }
                         else
@@ -351,6 +363,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                                     string fullName = socio.Nombre + " " + socio.Apellidos;
 
                                     hinstance.Message = $"puntuación de éxito : {ret}/100 - ({socio.CodigoSocio}) {fullName.ToUpper()}";
+                                  
                                     await DataHorariosProfesional(socio);
                                     return;
                                 }
@@ -436,7 +449,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     DefaultKeyEmpresa = stGlobal.KeyEmpresa ?? "",
                     Code = socio.Codigo ?? "",
                 });
-
                 if (resp.Success)
                 {
                     hinstance.HorarioFijo = resp.Data;
@@ -451,6 +463,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
             catch (Exception ex)
             {
+              
                 createFileLog("Management", ex);
             }
         }
@@ -496,6 +509,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     DefaultKeyEmpresa = stGlobal.KeyEmpresa ?? "",
                     Code = socio.Codigo ?? "",
                 });
+                createFile(resp.ToString());
 
                 if (resp.Success)
                 {
@@ -511,6 +525,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
             catch (Exception ex)
             {
+                createFile(ex.Message.ToString());
                 createFileLog("Management", ex);
             }
         }

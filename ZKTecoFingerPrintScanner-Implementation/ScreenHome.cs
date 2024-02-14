@@ -139,7 +139,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             lblT1M2.Text = clear ? "0:00" : hfijo.FechaHoraRefrigerioSalidaTexto ?? "0:00";
             lblT1M3.Text = clear ? "0:00" : hfijo.FechaHoraRefrigerioRetornoTexto ?? "0:00";
             lblT1M4.Text = clear ? "0:00" : hfijo.FechaHoraSalidaTexto ?? "0:00";
-
         }
         public void TTwoControl(HorarioFijo hfijo, bool clear = false)
         {
@@ -239,6 +238,8 @@ namespace ZKTecoFingerPrintScanner_Implementation
         //Render Horario fijo
         public void renderHorarioFijo(HorarioFijo hfijo)
         {
+            managementZk.createFile($"renderHorarioFijo: {hfijo.tipoTurno}");
+            managementZk.createFile($"renderHorarioFijo: {hfijo.FechaHoraRefrigerioSalidaTexto}");
             if (hfijo.tipoTurno == 1)
             {
                 // T1
@@ -282,6 +283,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                         CodigoUnidadNegocio = DataSession.Unidad,
                         CodigoSede = DataSession.Sede,
                         NumeroDocumento = inst.Personal.DNI,
+                        Fecha = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"),
                         OperacionMarcacion = operation
                     };
                     var resp = await api.MarcarPersonalFijo(body);
@@ -328,6 +330,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     CodigoProfesional = Horario.CodigoProfesional,
                     CodigoPersonalAsistencia = Horario.CodigoPersonalAsistencia ?? "",
                     DiaNumero = Horario.DiaNumero,
+                    Fecha = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"),
                     TipoAsistencia = type
                 };
 
@@ -359,8 +362,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 switch (type)
                 {
                     case "LHF":
-                        HorarioFijo hfijo = hinstance.HorarioFijo;
-                        renderHorarioFijo(hfijo);
+                        renderHorarioFijo(hinstance.HorarioFijo);
                         InfoPersonal(hinstance.Personal);
                         StatusMessage(hinstance.Message, true);
                         StatusMessageD($"", false, true);
@@ -1130,7 +1132,8 @@ namespace ZKTecoFingerPrintScanner_Implementation
                                         CodigoUnidadNegocio = DataSession.Unidad,
                                         Sede = DataSession.Sede,
                                         Socio = dataSocioAll.MembresiasSelected.CodigoSocio,
-                                        Membresia = dataSocioAll.MembresiasSelected.CodigoMenbresia
+                                        Membresia = dataSocioAll.MembresiasSelected.CodigoMenbresia,
+                                        Fecha = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")
                                     };
 
                                     var res = await serv.MarkAsistence(data);

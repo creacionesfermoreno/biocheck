@@ -210,6 +210,29 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.PicCLogo = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panelPFijoContent = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.pTurno1 = new System.Windows.Forms.Panel();
+            this.lblT1M4 = new System.Windows.Forms.Label();
+            this.lblT1M3 = new System.Windows.Forms.Label();
+            this.lblT1M2 = new System.Windows.Forms.Label();
+            this.lblT1M1 = new System.Windows.Forms.Label();
+            this.btnMarcarSalidaT1 = new System.Windows.Forms.Button();
+            this.btnMarcarFBT1 = new System.Windows.Forms.Button();
+            this.btnMarcarIBT1 = new System.Windows.Forms.Button();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.btnMarcarEntradaT1 = new System.Windows.Forms.Button();
+            this.pTurno2 = new System.Windows.Forms.Panel();
+            this.lblT2M4 = new System.Windows.Forms.Label();
+            this.lblT2M3 = new System.Windows.Forms.Label();
+            this.lblT2M2 = new System.Windows.Forms.Label();
+            this.lblT2M1 = new System.Windows.Forms.Label();
+            this.btnMarcarSalidaT2 = new System.Windows.Forms.Button();
+            this.btnMarcarFBT2 = new System.Windows.Forms.Button();
+            this.btnMarcarIBT2 = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.btnMarcarEntradaT2 = new System.Windows.Forms.Button();
+            this.label39 = new System.Windows.Forms.Label();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
             this.panelPProfeContent = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -235,29 +258,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.panelPFijoContent = new System.Windows.Forms.Panel();
-            this.label49 = new System.Windows.Forms.Label();
-            this.pTurno1 = new System.Windows.Forms.Panel();
-            this.lblT1M4 = new System.Windows.Forms.Label();
-            this.lblT1M3 = new System.Windows.Forms.Label();
-            this.lblT1M2 = new System.Windows.Forms.Label();
-            this.lblT1M1 = new System.Windows.Forms.Label();
-            this.btnMarcarSalidaT1 = new System.Windows.Forms.Button();
-            this.btnMarcarFBT1 = new System.Windows.Forms.Button();
-            this.btnMarcarIBT1 = new System.Windows.Forms.Button();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.btnMarcarEntradaT1 = new System.Windows.Forms.Button();
-            this.pTurno2 = new System.Windows.Forms.Panel();
-            this.lblT2M4 = new System.Windows.Forms.Label();
-            this.lblT2M3 = new System.Windows.Forms.Label();
-            this.lblT2M2 = new System.Windows.Forms.Label();
-            this.lblT2M1 = new System.Windows.Forms.Label();
-            this.btnMarcarSalidaT2 = new System.Windows.Forms.Button();
-            this.btnMarcarFBT2 = new System.Windows.Forms.Button();
-            this.btnMarcarIBT2 = new System.Windows.Forms.Button();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.btnMarcarEntradaT2 = new System.Windows.Forms.Button();
-            this.label39 = new System.Windows.Forms.Label();
             this.dgvMembresias = new System.Windows.Forms.DataGridView();
             this.NombrePaquete = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FCrecionText = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -390,6 +390,11 @@ namespace ZKTecoFingerPrintScanner_Implementation
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCLogo)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.panelPFijoContent.SuspendLayout();
+            this.pTurno1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.pTurno2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.tableLayoutPanel24.SuspendLayout();
             this.panelPProfeContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -402,11 +407,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAPHuella)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panelPFijoContent.SuspendLayout();
-            this.pTurno1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.pTurno2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembresias)).BeginInit();
             this.panelDeviseConnect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -650,7 +650,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.83502F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.16498F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 261F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 305F));
             this.tableLayoutPanel7.Controls.Add(this.panel18, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.panel19, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox26, 2, 0);
@@ -675,7 +675,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel18.Controls.Add(this.panel20);
             this.panel18.Location = new System.Drawing.Point(3, 3);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(331, 324);
+            this.panel18.Size = new System.Drawing.Size(307, 324);
             this.panel18.TabIndex = 0;
             // 
             // panel39
@@ -688,7 +688,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel39.Controls.Add(this.pictureBox23);
             this.panel39.Location = new System.Drawing.Point(22, 266);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(309, 50);
+            this.panel39.Size = new System.Drawing.Size(285, 50);
             this.panel39.TabIndex = 76;
             // 
             // panel40
@@ -699,7 +699,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel40.Controls.Add(this.txtMContrato);
             this.panel40.Location = new System.Drawing.Point(168, 0);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(141, 50);
+            this.panel40.Size = new System.Drawing.Size(117, 50);
             this.panel40.TabIndex = 4;
             // 
             // txtMContrato
@@ -743,7 +743,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel35.Controls.Add(this.pictureBox21);
             this.panel35.Location = new System.Drawing.Point(22, 205);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(309, 50);
+            this.panel35.Size = new System.Drawing.Size(285, 50);
             this.panel35.TabIndex = 75;
             // 
             // panel36
@@ -754,7 +754,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel36.Controls.Add(this.txtMDebe);
             this.panel36.Location = new System.Drawing.Point(168, 0);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(141, 50);
+            this.panel36.Size = new System.Drawing.Size(117, 50);
             this.panel36.TabIndex = 4;
             // 
             // txtMDebe
@@ -798,7 +798,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel31.Controls.Add(this.pictureBox19);
             this.panel31.Location = new System.Drawing.Point(22, 140);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(309, 50);
+            this.panel31.Size = new System.Drawing.Size(285, 50);
             this.panel31.TabIndex = 74;
             // 
             // panel32
@@ -809,7 +809,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel32.Controls.Add(this.txtMAcuenta);
             this.panel32.Location = new System.Drawing.Point(168, 0);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(141, 50);
+            this.panel32.Size = new System.Drawing.Size(117, 50);
             this.panel32.TabIndex = 4;
             // 
             // txtMAcuenta
@@ -853,7 +853,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel27.Controls.Add(this.pictureBox17);
             this.panel27.Location = new System.Drawing.Point(22, 79);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(307, 50);
+            this.panel27.Size = new System.Drawing.Size(283, 50);
             this.panel27.TabIndex = 73;
             // 
             // panel28
@@ -864,7 +864,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel28.Controls.Add(this.txtMPrecio);
             this.panel28.Location = new System.Drawing.Point(168, 0);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(139, 50);
+            this.panel28.Size = new System.Drawing.Size(115, 50);
             this.panel28.TabIndex = 4;
             // 
             // txtMPrecio
@@ -908,7 +908,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel20.Controls.Add(this.pictureBox14);
             this.panel20.Location = new System.Drawing.Point(22, 14);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(307, 50);
+            this.panel20.Size = new System.Drawing.Size(283, 50);
             this.panel20.TabIndex = 72;
             // 
             // panel22
@@ -919,7 +919,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel22.Controls.Add(this.txtMFInicio);
             this.panel22.Location = new System.Drawing.Point(168, 0);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(138, 50);
+            this.panel22.Size = new System.Drawing.Size(114, 50);
             this.panel22.TabIndex = 4;
             // 
             // txtMFInicio
@@ -963,9 +963,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel19.Controls.Add(this.panel33);
             this.panel19.Controls.Add(this.panel29);
             this.panel19.Controls.Add(this.panel21);
-            this.panel19.Location = new System.Drawing.Point(340, 3);
+            this.panel19.Location = new System.Drawing.Point(316, 3);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(283, 324);
+            this.panel19.Size = new System.Drawing.Size(263, 324);
             this.panel19.TabIndex = 1;
             // 
             // panel41
@@ -978,7 +978,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel41.Controls.Add(this.pictureBox24);
             this.panel41.Location = new System.Drawing.Point(3, 266);
             this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(276, 50);
+            this.panel41.Size = new System.Drawing.Size(256, 50);
             this.panel41.TabIndex = 77;
             // 
             // panel42
@@ -989,7 +989,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel42.Controls.Add(this.txtMSede);
             this.panel42.Location = new System.Drawing.Point(147, 0);
             this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(129, 50);
+            this.panel42.Size = new System.Drawing.Size(109, 50);
             this.panel42.TabIndex = 4;
             // 
             // txtMSede
@@ -1033,7 +1033,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel37.Controls.Add(this.pictureBox22);
             this.panel37.Location = new System.Drawing.Point(3, 205);
             this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(276, 50);
+            this.panel37.Size = new System.Drawing.Size(256, 50);
             this.panel37.TabIndex = 76;
             // 
             // panel38
@@ -1044,7 +1044,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel38.Controls.Add(this.txtMFrezingActual);
             this.panel38.Location = new System.Drawing.Point(180, 0);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(96, 50);
+            this.panel38.Size = new System.Drawing.Size(76, 50);
             this.panel38.TabIndex = 4;
             // 
             // txtMFrezingActual
@@ -1088,7 +1088,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel33.Controls.Add(this.pictureBox20);
             this.panel33.Location = new System.Drawing.Point(3, 140);
             this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(276, 50);
+            this.panel33.Size = new System.Drawing.Size(256, 50);
             this.panel33.TabIndex = 75;
             // 
             // panel34
@@ -1099,7 +1099,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel34.Controls.Add(this.txtMFrezingTom);
             this.panel34.Location = new System.Drawing.Point(174, 0);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(102, 50);
+            this.panel34.Size = new System.Drawing.Size(82, 50);
             this.panel34.TabIndex = 4;
             // 
             // txtMFrezingTom
@@ -1143,7 +1143,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel29.Controls.Add(this.pictureBox18);
             this.panel29.Location = new System.Drawing.Point(3, 79);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(277, 50);
+            this.panel29.Size = new System.Drawing.Size(257, 50);
             this.panel29.TabIndex = 74;
             // 
             // panel30
@@ -1154,7 +1154,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel30.Controls.Add(this.txtMFrezing);
             this.panel30.Location = new System.Drawing.Point(147, 0);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(133, 50);
+            this.panel30.Size = new System.Drawing.Size(113, 50);
             this.panel30.TabIndex = 4;
             // 
             // txtMFrezing
@@ -1198,7 +1198,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel21.Controls.Add(this.pictureBox15);
             this.panel21.Location = new System.Drawing.Point(3, 14);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(277, 50);
+            this.panel21.Size = new System.Drawing.Size(257, 50);
             this.panel21.TabIndex = 73;
             // 
             // panel23
@@ -1209,7 +1209,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel23.Controls.Add(this.txtMFin);
             this.panel23.Location = new System.Drawing.Point(147, 0);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(129, 50);
+            this.panel23.Size = new System.Drawing.Size(109, 50);
             this.panel23.TabIndex = 6;
             // 
             // txtMFin
@@ -1249,9 +1249,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox26.Image = global::BIOCHECK.Properties.Resources.person;
-            this.pictureBox26.Location = new System.Drawing.Point(629, 3);
+            this.pictureBox26.Location = new System.Drawing.Point(585, 3);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(256, 324);
+            this.pictureBox26.Size = new System.Drawing.Size(300, 324);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 2;
             this.pictureBox26.TabStop = false;
@@ -1344,7 +1344,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.17586F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.82414F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 281F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 325F));
             this.tableLayoutPanel5.Controls.Add(this.panel17, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblPlan, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.txtMPromo, 1, 2);
@@ -1365,7 +1365,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel17.Controls.Add(this.label12);
             this.panel17.Location = new System.Drawing.Point(3, 17);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(250, 55);
+            this.panel17.Size = new System.Drawing.Size(231, 55);
             this.panel17.TabIndex = 68;
             // 
             // pictureBox13
@@ -1396,9 +1396,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblPlan.AutoSize = true;
             this.lblPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(28)))), ((int)(((byte)(70)))));
-            this.lblPlan.Location = new System.Drawing.Point(259, 14);
+            this.lblPlan.Location = new System.Drawing.Point(240, 14);
             this.lblPlan.Name = "lblPlan";
-            this.lblPlan.Size = new System.Drawing.Size(344, 61);
+            this.lblPlan.Size = new System.Drawing.Size(319, 61);
             this.lblPlan.TabIndex = 69;
             this.lblPlan.Text = "PLAN PRUEBA APPSFIT";
             this.lblPlan.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1410,10 +1410,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.txtMPromo.AutoSize = true;
             this.txtMPromo.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMPromo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(146)))), ((int)(((byte)(146)))));
-            this.txtMPromo.Location = new System.Drawing.Point(259, 75);
+            this.txtMPromo.Location = new System.Drawing.Point(240, 75);
             this.txtMPromo.Name = "txtMPromo";
             this.txtMPromo.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.txtMPromo.Size = new System.Drawing.Size(344, 25);
+            this.txtMPromo.Size = new System.Drawing.Size(319, 25);
             this.txtMPromo.TabIndex = 70;
             this.txtMPromo.Text = "Paquete prueba 1 mes";
             // 
@@ -2286,7 +2286,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(95, 13);
             this.label22.TabIndex = 30;
-            this.label22.Text = "version: 1.0.0.0.24";
+            this.label22.Text = "version: 1.0.0.0.40";
             // 
             // button1
             // 
@@ -2673,15 +2673,336 @@ namespace ZKTecoFingerPrintScanner_Implementation
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.panelPFijoContent);
             this.tabPage4.Controls.Add(this.tableLayoutPanel24);
             this.tabPage4.Controls.Add(this.panel1);
+            this.tabPage4.Controls.Add(this.panelPFijoContent);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1192, 884);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Asistencia personal";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panelPFijoContent
+            // 
+            this.panelPFijoContent.Controls.Add(this.label49);
+            this.panelPFijoContent.Controls.Add(this.pTurno1);
+            this.panelPFijoContent.Controls.Add(this.pTurno2);
+            this.panelPFijoContent.Controls.Add(this.label39);
+            this.panelPFijoContent.Location = new System.Drawing.Point(325, 3);
+            this.panelPFijoContent.Name = "panelPFijoContent";
+            this.panelPFijoContent.Size = new System.Drawing.Size(848, 613);
+            this.panelPFijoContent.TabIndex = 31;
+            // 
+            // label49
+            // 
+            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.label49.ForeColor = System.Drawing.Color.Black;
+            this.label49.Location = new System.Drawing.Point(31, 304);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(66, 18);
+            this.label49.TabIndex = 29;
+            this.label49.Text = "Turno 2";
+            // 
+            // pTurno1
+            // 
+            this.pTurno1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pTurno1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pTurno1.Controls.Add(this.lblT1M4);
+            this.pTurno1.Controls.Add(this.lblT1M3);
+            this.pTurno1.Controls.Add(this.lblT1M2);
+            this.pTurno1.Controls.Add(this.lblT1M1);
+            this.pTurno1.Controls.Add(this.btnMarcarSalidaT1);
+            this.pTurno1.Controls.Add(this.btnMarcarFBT1);
+            this.pTurno1.Controls.Add(this.btnMarcarIBT1);
+            this.pTurno1.Controls.Add(this.pictureBox12);
+            this.pTurno1.Controls.Add(this.btnMarcarEntradaT1);
+            this.pTurno1.Location = new System.Drawing.Point(34, 33);
+            this.pTurno1.Name = "pTurno1";
+            this.pTurno1.Size = new System.Drawing.Size(782, 258);
+            this.pTurno1.TabIndex = 27;
+            // 
+            // lblT1M4
+            // 
+            this.lblT1M4.AutoSize = true;
+            this.lblT1M4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT1M4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblT1M4.Location = new System.Drawing.Point(346, 196);
+            this.lblT1M4.Name = "lblT1M4";
+            this.lblT1M4.Size = new System.Drawing.Size(44, 20);
+            this.lblT1M4.TabIndex = 8;
+            this.lblT1M4.Text = "0:00";
+            // 
+            // lblT1M3
+            // 
+            this.lblT1M3.AutoSize = true;
+            this.lblT1M3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT1M3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblT1M3.Location = new System.Drawing.Point(346, 142);
+            this.lblT1M3.Name = "lblT1M3";
+            this.lblT1M3.Size = new System.Drawing.Size(44, 20);
+            this.lblT1M3.TabIndex = 7;
+            this.lblT1M3.Text = "0:00";
+            // 
+            // lblT1M2
+            // 
+            this.lblT1M2.AutoSize = true;
+            this.lblT1M2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT1M2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblT1M2.Location = new System.Drawing.Point(346, 96);
+            this.lblT1M2.Name = "lblT1M2";
+            this.lblT1M2.Size = new System.Drawing.Size(44, 20);
+            this.lblT1M2.TabIndex = 6;
+            this.lblT1M2.Text = "0:00";
+            // 
+            // lblT1M1
+            // 
+            this.lblT1M1.AutoSize = true;
+            this.lblT1M1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT1M1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
+            this.lblT1M1.Location = new System.Drawing.Point(346, 35);
+            this.lblT1M1.Name = "lblT1M1";
+            this.lblT1M1.Size = new System.Drawing.Size(44, 20);
+            this.lblT1M1.TabIndex = 5;
+            this.lblT1M1.Text = "0:00";
+            // 
+            // btnMarcarSalidaT1
+            // 
+            this.btnMarcarSalidaT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMarcarSalidaT1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcarSalidaT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcarSalidaT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcarSalidaT1.ForeColor = System.Drawing.Color.White;
+            this.btnMarcarSalidaT1.Image = global::BIOCHECK.Properties.Resources.left;
+            this.btnMarcarSalidaT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcarSalidaT1.Location = new System.Drawing.Point(14, 187);
+            this.btnMarcarSalidaT1.Name = "btnMarcarSalidaT1";
+            this.btnMarcarSalidaT1.Size = new System.Drawing.Size(209, 40);
+            this.btnMarcarSalidaT1.TabIndex = 4;
+            this.btnMarcarSalidaT1.Text = "Marcar Salida";
+            this.btnMarcarSalidaT1.UseVisualStyleBackColor = false;
+            this.btnMarcarSalidaT1.Click += new System.EventHandler(this.btnMarcarSalidaT1_Click);
+            // 
+            // btnMarcarFBT1
+            // 
+            this.btnMarcarFBT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMarcarFBT1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcarFBT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcarFBT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcarFBT1.ForeColor = System.Drawing.Color.White;
+            this.btnMarcarFBT1.Image = global::BIOCHECK.Properties.Resources.right;
+            this.btnMarcarFBT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcarFBT1.Location = new System.Drawing.Point(14, 133);
+            this.btnMarcarFBT1.Name = "btnMarcarFBT1";
+            this.btnMarcarFBT1.Size = new System.Drawing.Size(209, 40);
+            this.btnMarcarFBT1.TabIndex = 3;
+            this.btnMarcarFBT1.Text = "Marcar Fin Break";
+            this.btnMarcarFBT1.UseVisualStyleBackColor = false;
+            this.btnMarcarFBT1.Click += new System.EventHandler(this.btnMarcarFBT1_Click);
+            // 
+            // btnMarcarIBT1
+            // 
+            this.btnMarcarIBT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMarcarIBT1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcarIBT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcarIBT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcarIBT1.ForeColor = System.Drawing.Color.White;
+            this.btnMarcarIBT1.Image = global::BIOCHECK.Properties.Resources.left;
+            this.btnMarcarIBT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcarIBT1.Location = new System.Drawing.Point(14, 80);
+            this.btnMarcarIBT1.Name = "btnMarcarIBT1";
+            this.btnMarcarIBT1.Size = new System.Drawing.Size(209, 40);
+            this.btnMarcarIBT1.TabIndex = 2;
+            this.btnMarcarIBT1.Text = "Marcar Inicio Break";
+            this.btnMarcarIBT1.UseVisualStyleBackColor = false;
+            this.btnMarcarIBT1.Click += new System.EventHandler(this.btnMarcarIBT1_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox12.Image = global::BIOCHECK.Properties.Resources.bgtime;
+            this.pictureBox12.Location = new System.Drawing.Point(564, 35);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(192, 192);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 1;
+            this.pictureBox12.TabStop = false;
+            // 
+            // btnMarcarEntradaT1
+            // 
+            this.btnMarcarEntradaT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMarcarEntradaT1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcarEntradaT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcarEntradaT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcarEntradaT1.ForeColor = System.Drawing.Color.White;
+            this.btnMarcarEntradaT1.Image = global::BIOCHECK.Properties.Resources.right;
+            this.btnMarcarEntradaT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcarEntradaT1.Location = new System.Drawing.Point(14, 26);
+            this.btnMarcarEntradaT1.Name = "btnMarcarEntradaT1";
+            this.btnMarcarEntradaT1.Size = new System.Drawing.Size(209, 40);
+            this.btnMarcarEntradaT1.TabIndex = 0;
+            this.btnMarcarEntradaT1.Text = "Marcar Entrada";
+            this.btnMarcarEntradaT1.UseVisualStyleBackColor = false;
+            this.btnMarcarEntradaT1.Click += new System.EventHandler(this.btnMarcarEntradaT1_Click);
+            // 
+            // pTurno2
+            // 
+            this.pTurno2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pTurno2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pTurno2.Controls.Add(this.lblT2M4);
+            this.pTurno2.Controls.Add(this.lblT2M3);
+            this.pTurno2.Controls.Add(this.lblT2M2);
+            this.pTurno2.Controls.Add(this.lblT2M1);
+            this.pTurno2.Controls.Add(this.btnMarcarSalidaT2);
+            this.pTurno2.Controls.Add(this.btnMarcarFBT2);
+            this.pTurno2.Controls.Add(this.btnMarcarIBT2);
+            this.pTurno2.Controls.Add(this.pictureBox10);
+            this.pTurno2.Controls.Add(this.btnMarcarEntradaT2);
+            this.pTurno2.Location = new System.Drawing.Point(34, 325);
+            this.pTurno2.Name = "pTurno2";
+            this.pTurno2.Size = new System.Drawing.Size(782, 258);
+            this.pTurno2.TabIndex = 28;
+            // 
+            // lblT2M4
+            // 
+            this.lblT2M4.AutoSize = true;
+            this.lblT2M4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT2M4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblT2M4.Location = new System.Drawing.Point(346, 196);
+            this.lblT2M4.Name = "lblT2M4";
+            this.lblT2M4.Size = new System.Drawing.Size(44, 20);
+            this.lblT2M4.TabIndex = 8;
+            this.lblT2M4.Text = "0:00";
+            // 
+            // lblT2M3
+            // 
+            this.lblT2M3.AutoSize = true;
+            this.lblT2M3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT2M3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblT2M3.Location = new System.Drawing.Point(346, 142);
+            this.lblT2M3.Name = "lblT2M3";
+            this.lblT2M3.Size = new System.Drawing.Size(44, 20);
+            this.lblT2M3.TabIndex = 7;
+            this.lblT2M3.Text = "0:00";
+            // 
+            // lblT2M2
+            // 
+            this.lblT2M2.AutoSize = true;
+            this.lblT2M2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT2M2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblT2M2.Location = new System.Drawing.Point(346, 89);
+            this.lblT2M2.Name = "lblT2M2";
+            this.lblT2M2.Size = new System.Drawing.Size(44, 20);
+            this.lblT2M2.TabIndex = 6;
+            this.lblT2M2.Text = "0:00";
+            // 
+            // lblT2M1
+            // 
+            this.lblT2M1.AutoSize = true;
+            this.lblT2M1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblT2M1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblT2M1.Location = new System.Drawing.Point(346, 35);
+            this.lblT2M1.Name = "lblT2M1";
+            this.lblT2M1.Size = new System.Drawing.Size(44, 20);
+            this.lblT2M1.TabIndex = 5;
+            this.lblT2M1.Text = "0:00";
+            // 
+            // btnMarcarSalidaT2
+            // 
+            this.btnMarcarSalidaT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMarcarSalidaT2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcarSalidaT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcarSalidaT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcarSalidaT2.ForeColor = System.Drawing.Color.White;
+            this.btnMarcarSalidaT2.Image = global::BIOCHECK.Properties.Resources.left;
+            this.btnMarcarSalidaT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcarSalidaT2.Location = new System.Drawing.Point(14, 187);
+            this.btnMarcarSalidaT2.Name = "btnMarcarSalidaT2";
+            this.btnMarcarSalidaT2.Size = new System.Drawing.Size(209, 40);
+            this.btnMarcarSalidaT2.TabIndex = 4;
+            this.btnMarcarSalidaT2.Text = "Marcar Salida";
+            this.btnMarcarSalidaT2.UseVisualStyleBackColor = false;
+            this.btnMarcarSalidaT2.Click += new System.EventHandler(this.btnMarcarSalidaT2_Click);
+            // 
+            // btnMarcarFBT2
+            // 
+            this.btnMarcarFBT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMarcarFBT2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcarFBT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcarFBT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcarFBT2.ForeColor = System.Drawing.Color.White;
+            this.btnMarcarFBT2.Image = global::BIOCHECK.Properties.Resources.right;
+            this.btnMarcarFBT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcarFBT2.Location = new System.Drawing.Point(14, 133);
+            this.btnMarcarFBT2.Name = "btnMarcarFBT2";
+            this.btnMarcarFBT2.Size = new System.Drawing.Size(209, 40);
+            this.btnMarcarFBT2.TabIndex = 3;
+            this.btnMarcarFBT2.Text = "Marcar Fin Break";
+            this.btnMarcarFBT2.UseVisualStyleBackColor = false;
+            this.btnMarcarFBT2.Click += new System.EventHandler(this.btnMarcarFBT2_Click);
+            // 
+            // btnMarcarIBT2
+            // 
+            this.btnMarcarIBT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMarcarIBT2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcarIBT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcarIBT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcarIBT2.ForeColor = System.Drawing.Color.White;
+            this.btnMarcarIBT2.Image = global::BIOCHECK.Properties.Resources.left;
+            this.btnMarcarIBT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcarIBT2.Location = new System.Drawing.Point(14, 80);
+            this.btnMarcarIBT2.Name = "btnMarcarIBT2";
+            this.btnMarcarIBT2.Size = new System.Drawing.Size(209, 40);
+            this.btnMarcarIBT2.TabIndex = 2;
+            this.btnMarcarIBT2.Text = "Marcar Inicio Break";
+            this.btnMarcarIBT2.UseVisualStyleBackColor = false;
+            this.btnMarcarIBT2.Click += new System.EventHandler(this.btnMarcarIBT2_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox10.Image = global::BIOCHECK.Properties.Resources.bgtime;
+            this.pictureBox10.Location = new System.Drawing.Point(564, 35);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(192, 192);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 1;
+            this.pictureBox10.TabStop = false;
+            // 
+            // btnMarcarEntradaT2
+            // 
+            this.btnMarcarEntradaT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnMarcarEntradaT2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMarcarEntradaT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarcarEntradaT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMarcarEntradaT2.ForeColor = System.Drawing.Color.White;
+            this.btnMarcarEntradaT2.Image = global::BIOCHECK.Properties.Resources.right;
+            this.btnMarcarEntradaT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMarcarEntradaT2.Location = new System.Drawing.Point(14, 26);
+            this.btnMarcarEntradaT2.Name = "btnMarcarEntradaT2";
+            this.btnMarcarEntradaT2.Size = new System.Drawing.Size(209, 40);
+            this.btnMarcarEntradaT2.TabIndex = 0;
+            this.btnMarcarEntradaT2.Text = "Marcar Entrada";
+            this.btnMarcarEntradaT2.UseVisualStyleBackColor = false;
+            this.btnMarcarEntradaT2.Click += new System.EventHandler(this.btnMarcarEntradaT2_Click);
+            // 
+            // label39
+            // 
+            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.label39.ForeColor = System.Drawing.Color.Black;
+            this.label39.Location = new System.Drawing.Point(31, 12);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(66, 18);
+            this.label39.TabIndex = 28;
+            this.label39.Text = "Turno 1";
             // 
             // tableLayoutPanel24
             // 
@@ -3014,327 +3335,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.label33.Text = "Control de Asistencia \nPersonal";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panelPFijoContent
-            // 
-            this.panelPFijoContent.Controls.Add(this.label49);
-            this.panelPFijoContent.Controls.Add(this.pTurno1);
-            this.panelPFijoContent.Controls.Add(this.pTurno2);
-            this.panelPFijoContent.Controls.Add(this.label39);
-            this.panelPFijoContent.Location = new System.Drawing.Point(325, 3);
-            this.panelPFijoContent.Name = "panelPFijoContent";
-            this.panelPFijoContent.Size = new System.Drawing.Size(848, 613);
-            this.panelPFijoContent.TabIndex = 31;
-            // 
-            // label49
-            // 
-            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(31, 304);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(66, 18);
-            this.label49.TabIndex = 29;
-            this.label49.Text = "Turno 2";
-            // 
-            // pTurno1
-            // 
-            this.pTurno1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pTurno1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pTurno1.Controls.Add(this.lblT1M4);
-            this.pTurno1.Controls.Add(this.lblT1M3);
-            this.pTurno1.Controls.Add(this.lblT1M2);
-            this.pTurno1.Controls.Add(this.lblT1M1);
-            this.pTurno1.Controls.Add(this.btnMarcarSalidaT1);
-            this.pTurno1.Controls.Add(this.btnMarcarFBT1);
-            this.pTurno1.Controls.Add(this.btnMarcarIBT1);
-            this.pTurno1.Controls.Add(this.pictureBox12);
-            this.pTurno1.Controls.Add(this.btnMarcarEntradaT1);
-            this.pTurno1.Location = new System.Drawing.Point(34, 33);
-            this.pTurno1.Name = "pTurno1";
-            this.pTurno1.Size = new System.Drawing.Size(782, 258);
-            this.pTurno1.TabIndex = 27;
-            // 
-            // lblT1M4
-            // 
-            this.lblT1M4.AutoSize = true;
-            this.lblT1M4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT1M4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblT1M4.Location = new System.Drawing.Point(346, 196);
-            this.lblT1M4.Name = "lblT1M4";
-            this.lblT1M4.Size = new System.Drawing.Size(44, 20);
-            this.lblT1M4.TabIndex = 8;
-            this.lblT1M4.Text = "0:00";
-            // 
-            // lblT1M3
-            // 
-            this.lblT1M3.AutoSize = true;
-            this.lblT1M3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT1M3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblT1M3.Location = new System.Drawing.Point(346, 142);
-            this.lblT1M3.Name = "lblT1M3";
-            this.lblT1M3.Size = new System.Drawing.Size(44, 20);
-            this.lblT1M3.TabIndex = 7;
-            this.lblT1M3.Text = "0:00";
-            // 
-            // lblT1M2
-            // 
-            this.lblT1M2.AutoSize = true;
-            this.lblT1M2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT1M2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblT1M2.Location = new System.Drawing.Point(346, 96);
-            this.lblT1M2.Name = "lblT1M2";
-            this.lblT1M2.Size = new System.Drawing.Size(44, 20);
-            this.lblT1M2.TabIndex = 6;
-            this.lblT1M2.Text = "0:00";
-            // 
-            // lblT1M1
-            // 
-            this.lblT1M1.AutoSize = true;
-            this.lblT1M1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT1M1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
-            this.lblT1M1.Location = new System.Drawing.Point(346, 35);
-            this.lblT1M1.Name = "lblT1M1";
-            this.lblT1M1.Size = new System.Drawing.Size(44, 20);
-            this.lblT1M1.TabIndex = 5;
-            this.lblT1M1.Text = "0:00";
-            // 
-            // btnMarcarSalidaT1
-            // 
-            this.btnMarcarSalidaT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMarcarSalidaT1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarcarSalidaT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcarSalidaT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcarSalidaT1.ForeColor = System.Drawing.Color.White;
-            this.btnMarcarSalidaT1.Image = global::BIOCHECK.Properties.Resources.left;
-            this.btnMarcarSalidaT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarcarSalidaT1.Location = new System.Drawing.Point(14, 187);
-            this.btnMarcarSalidaT1.Name = "btnMarcarSalidaT1";
-            this.btnMarcarSalidaT1.Size = new System.Drawing.Size(209, 40);
-            this.btnMarcarSalidaT1.TabIndex = 4;
-            this.btnMarcarSalidaT1.Text = "Marcar Salida";
-            this.btnMarcarSalidaT1.UseVisualStyleBackColor = false;
-            this.btnMarcarSalidaT1.Click += new System.EventHandler(this.btnMarcarSalidaT1_Click);
-            // 
-            // btnMarcarFBT1
-            // 
-            this.btnMarcarFBT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMarcarFBT1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarcarFBT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcarFBT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcarFBT1.ForeColor = System.Drawing.Color.White;
-            this.btnMarcarFBT1.Image = global::BIOCHECK.Properties.Resources.right;
-            this.btnMarcarFBT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarcarFBT1.Location = new System.Drawing.Point(14, 133);
-            this.btnMarcarFBT1.Name = "btnMarcarFBT1";
-            this.btnMarcarFBT1.Size = new System.Drawing.Size(209, 40);
-            this.btnMarcarFBT1.TabIndex = 3;
-            this.btnMarcarFBT1.Text = "Marcar Fin Break";
-            this.btnMarcarFBT1.UseVisualStyleBackColor = false;
-            this.btnMarcarFBT1.Click += new System.EventHandler(this.btnMarcarFBT1_Click);
-            // 
-            // btnMarcarIBT1
-            // 
-            this.btnMarcarIBT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMarcarIBT1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarcarIBT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcarIBT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcarIBT1.ForeColor = System.Drawing.Color.White;
-            this.btnMarcarIBT1.Image = global::BIOCHECK.Properties.Resources.left;
-            this.btnMarcarIBT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarcarIBT1.Location = new System.Drawing.Point(14, 80);
-            this.btnMarcarIBT1.Name = "btnMarcarIBT1";
-            this.btnMarcarIBT1.Size = new System.Drawing.Size(209, 40);
-            this.btnMarcarIBT1.TabIndex = 2;
-            this.btnMarcarIBT1.Text = "Marcar Inicio Break";
-            this.btnMarcarIBT1.UseVisualStyleBackColor = false;
-            this.btnMarcarIBT1.Click += new System.EventHandler(this.btnMarcarIBT1_Click);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox12.Image = global::BIOCHECK.Properties.Resources.bgtime;
-            this.pictureBox12.Location = new System.Drawing.Point(564, 35);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(192, 192);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 1;
-            this.pictureBox12.TabStop = false;
-            // 
-            // btnMarcarEntradaT1
-            // 
-            this.btnMarcarEntradaT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMarcarEntradaT1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarcarEntradaT1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcarEntradaT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcarEntradaT1.ForeColor = System.Drawing.Color.White;
-            this.btnMarcarEntradaT1.Image = global::BIOCHECK.Properties.Resources.right;
-            this.btnMarcarEntradaT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarcarEntradaT1.Location = new System.Drawing.Point(14, 26);
-            this.btnMarcarEntradaT1.Name = "btnMarcarEntradaT1";
-            this.btnMarcarEntradaT1.Size = new System.Drawing.Size(209, 40);
-            this.btnMarcarEntradaT1.TabIndex = 0;
-            this.btnMarcarEntradaT1.Text = "Marcar Entrada";
-            this.btnMarcarEntradaT1.UseVisualStyleBackColor = false;
-            this.btnMarcarEntradaT1.Click += new System.EventHandler(this.btnMarcarEntradaT1_Click);
-            // 
-            // pTurno2
-            // 
-            this.pTurno2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pTurno2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pTurno2.Controls.Add(this.lblT2M4);
-            this.pTurno2.Controls.Add(this.lblT2M3);
-            this.pTurno2.Controls.Add(this.lblT2M2);
-            this.pTurno2.Controls.Add(this.lblT2M1);
-            this.pTurno2.Controls.Add(this.btnMarcarSalidaT2);
-            this.pTurno2.Controls.Add(this.btnMarcarFBT2);
-            this.pTurno2.Controls.Add(this.btnMarcarIBT2);
-            this.pTurno2.Controls.Add(this.pictureBox10);
-            this.pTurno2.Controls.Add(this.btnMarcarEntradaT2);
-            this.pTurno2.Location = new System.Drawing.Point(34, 325);
-            this.pTurno2.Name = "pTurno2";
-            this.pTurno2.Size = new System.Drawing.Size(782, 258);
-            this.pTurno2.TabIndex = 28;
-            // 
-            // lblT2M4
-            // 
-            this.lblT2M4.AutoSize = true;
-            this.lblT2M4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT2M4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblT2M4.Location = new System.Drawing.Point(346, 196);
-            this.lblT2M4.Name = "lblT2M4";
-            this.lblT2M4.Size = new System.Drawing.Size(44, 20);
-            this.lblT2M4.TabIndex = 8;
-            this.lblT2M4.Text = "0:00";
-            // 
-            // lblT2M3
-            // 
-            this.lblT2M3.AutoSize = true;
-            this.lblT2M3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT2M3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblT2M3.Location = new System.Drawing.Point(346, 142);
-            this.lblT2M3.Name = "lblT2M3";
-            this.lblT2M3.Size = new System.Drawing.Size(44, 20);
-            this.lblT2M3.TabIndex = 7;
-            this.lblT2M3.Text = "0:00";
-            // 
-            // lblT2M2
-            // 
-            this.lblT2M2.AutoSize = true;
-            this.lblT2M2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT2M2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblT2M2.Location = new System.Drawing.Point(346, 89);
-            this.lblT2M2.Name = "lblT2M2";
-            this.lblT2M2.Size = new System.Drawing.Size(44, 20);
-            this.lblT2M2.TabIndex = 6;
-            this.lblT2M2.Text = "0:00";
-            // 
-            // lblT2M1
-            // 
-            this.lblT2M1.AutoSize = true;
-            this.lblT2M1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblT2M1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblT2M1.Location = new System.Drawing.Point(346, 35);
-            this.lblT2M1.Name = "lblT2M1";
-            this.lblT2M1.Size = new System.Drawing.Size(44, 20);
-            this.lblT2M1.TabIndex = 5;
-            this.lblT2M1.Text = "0:00";
-            // 
-            // btnMarcarSalidaT2
-            // 
-            this.btnMarcarSalidaT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMarcarSalidaT2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarcarSalidaT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcarSalidaT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcarSalidaT2.ForeColor = System.Drawing.Color.White;
-            this.btnMarcarSalidaT2.Image = global::BIOCHECK.Properties.Resources.left;
-            this.btnMarcarSalidaT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarcarSalidaT2.Location = new System.Drawing.Point(14, 187);
-            this.btnMarcarSalidaT2.Name = "btnMarcarSalidaT2";
-            this.btnMarcarSalidaT2.Size = new System.Drawing.Size(209, 40);
-            this.btnMarcarSalidaT2.TabIndex = 4;
-            this.btnMarcarSalidaT2.Text = "Marcar Salida";
-            this.btnMarcarSalidaT2.UseVisualStyleBackColor = false;
-            this.btnMarcarSalidaT2.Click += new System.EventHandler(this.btnMarcarSalidaT2_Click);
-            // 
-            // btnMarcarFBT2
-            // 
-            this.btnMarcarFBT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMarcarFBT2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarcarFBT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcarFBT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcarFBT2.ForeColor = System.Drawing.Color.White;
-            this.btnMarcarFBT2.Image = global::BIOCHECK.Properties.Resources.right;
-            this.btnMarcarFBT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarcarFBT2.Location = new System.Drawing.Point(14, 133);
-            this.btnMarcarFBT2.Name = "btnMarcarFBT2";
-            this.btnMarcarFBT2.Size = new System.Drawing.Size(209, 40);
-            this.btnMarcarFBT2.TabIndex = 3;
-            this.btnMarcarFBT2.Text = "Marcar Fin Break";
-            this.btnMarcarFBT2.UseVisualStyleBackColor = false;
-            this.btnMarcarFBT2.Click += new System.EventHandler(this.btnMarcarFBT2_Click);
-            // 
-            // btnMarcarIBT2
-            // 
-            this.btnMarcarIBT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMarcarIBT2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarcarIBT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcarIBT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcarIBT2.ForeColor = System.Drawing.Color.White;
-            this.btnMarcarIBT2.Image = global::BIOCHECK.Properties.Resources.left;
-            this.btnMarcarIBT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarcarIBT2.Location = new System.Drawing.Point(14, 80);
-            this.btnMarcarIBT2.Name = "btnMarcarIBT2";
-            this.btnMarcarIBT2.Size = new System.Drawing.Size(209, 40);
-            this.btnMarcarIBT2.TabIndex = 2;
-            this.btnMarcarIBT2.Text = "Marcar Inicio Break";
-            this.btnMarcarIBT2.UseVisualStyleBackColor = false;
-            this.btnMarcarIBT2.Click += new System.EventHandler(this.btnMarcarIBT2_Click);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox10.Image = global::BIOCHECK.Properties.Resources.bgtime;
-            this.pictureBox10.Location = new System.Drawing.Point(564, 35);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(192, 192);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 1;
-            this.pictureBox10.TabStop = false;
-            // 
-            // btnMarcarEntradaT2
-            // 
-            this.btnMarcarEntradaT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.btnMarcarEntradaT2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMarcarEntradaT2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarcarEntradaT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMarcarEntradaT2.ForeColor = System.Drawing.Color.White;
-            this.btnMarcarEntradaT2.Image = global::BIOCHECK.Properties.Resources.right;
-            this.btnMarcarEntradaT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMarcarEntradaT2.Location = new System.Drawing.Point(14, 26);
-            this.btnMarcarEntradaT2.Name = "btnMarcarEntradaT2";
-            this.btnMarcarEntradaT2.Size = new System.Drawing.Size(209, 40);
-            this.btnMarcarEntradaT2.TabIndex = 0;
-            this.btnMarcarEntradaT2.Text = "Marcar Entrada";
-            this.btnMarcarEntradaT2.UseVisualStyleBackColor = false;
-            this.btnMarcarEntradaT2.Click += new System.EventHandler(this.btnMarcarEntradaT2_Click);
-            // 
-            // label39
-            // 
-            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.label39.ForeColor = System.Drawing.Color.Black;
-            this.label39.Location = new System.Drawing.Point(31, 12);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(66, 18);
-            this.label39.TabIndex = 28;
-            this.label39.Text = "Turno 1";
-            // 
             // dgvMembresias
             // 
             this.dgvMembresias.Location = new System.Drawing.Point(0, 0);
@@ -3448,7 +3448,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.96644F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.03356F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245F));
             this.tableLayoutPanel8.Controls.Add(this.lblCountEvent, 2, 1);
             this.tableLayoutPanel8.Controls.Add(this.lblCountFijo, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.lblCount, 0, 1);
@@ -3468,10 +3468,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCountEvent.AutoSize = true;
             this.lblCountEvent.BackColor = System.Drawing.Color.Transparent;
             this.lblCountEvent.ForeColor = System.Drawing.Color.White;
-            this.lblCountEvent.Location = new System.Drawing.Point(246, 23);
+            this.lblCountEvent.Location = new System.Drawing.Point(202, 23);
             this.lblCountEvent.Name = "lblCountEvent";
             this.lblCountEvent.Padding = new System.Windows.Forms.Padding(5);
-            this.lblCountEvent.Size = new System.Drawing.Size(196, 23);
+            this.lblCountEvent.Size = new System.Drawing.Size(240, 23);
             this.lblCountEvent.TabIndex = 34;
             this.lblCountEvent.Text = "Registros Profesionales : 0";
             // 
@@ -3481,10 +3481,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCountFijo.AutoSize = true;
             this.lblCountFijo.BackColor = System.Drawing.Color.Transparent;
             this.lblCountFijo.ForeColor = System.Drawing.Color.White;
-            this.lblCountFijo.Location = new System.Drawing.Point(112, 23);
+            this.lblCountFijo.Location = new System.Drawing.Point(92, 23);
             this.lblCountFijo.Name = "lblCountFijo";
             this.lblCountFijo.Padding = new System.Windows.Forms.Padding(5);
-            this.lblCountFijo.Size = new System.Drawing.Size(128, 23);
+            this.lblCountFijo.Size = new System.Drawing.Size(104, 23);
             this.lblCountFijo.TabIndex = 35;
             this.lblCountFijo.Text = "Registros Personal : 0";
             // 
@@ -3497,7 +3497,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCount.Location = new System.Drawing.Point(3, 23);
             this.lblCount.Name = "lblCount";
             this.lblCount.Padding = new System.Windows.Forms.Padding(5);
-            this.lblCount.Size = new System.Drawing.Size(103, 23);
+            this.lblCount.Size = new System.Drawing.Size(83, 23);
             this.lblCount.TabIndex = 31;
             this.lblCount.Text = "Cant. Registros : 0";
             // 
@@ -4009,6 +4009,14 @@ namespace ZKTecoFingerPrintScanner_Implementation
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCLogo)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.panelPFijoContent.ResumeLayout(false);
+            this.panelPFijoContent.PerformLayout();
+            this.pTurno1.ResumeLayout(false);
+            this.pTurno1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.pTurno2.ResumeLayout(false);
+            this.pTurno2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.tableLayoutPanel24.ResumeLayout(false);
             this.panelPProfeContent.ResumeLayout(false);
             this.panelPProfeContent.PerformLayout();
@@ -4025,14 +4033,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAPHuella)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panelPFijoContent.ResumeLayout(false);
-            this.panelPFijoContent.PerformLayout();
-            this.pTurno1.ResumeLayout(false);
-            this.pTurno1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.pTurno2.ResumeLayout(false);
-            this.pTurno2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembresias)).EndInit();
             this.panelDeviseConnect.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
