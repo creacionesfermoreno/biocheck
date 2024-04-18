@@ -11,7 +11,7 @@ namespace ZKTecoFingerPrintScanner_Implementation.Services
     {
         private readonly HttpClient _httpClient;
         private readonly string apiUrl = "https://webapiappsfit-cliente.azurewebsites.net/api";
-        //private readonly string apiUrl = "https://localhost:44386/api";
+       // private readonly string apiUrl = "https://localhost:44386/api";
 
         public AppsFitService()
         {
@@ -38,7 +38,26 @@ namespace ZKTecoFingerPrintScanner_Implementation.Services
             return resp;
         }
 
-        
+        //new code
+        public async Task<ResponseModel> SearchDeudaProductoSocio(object body)
+        {
+            ResponseModel resp = new ResponseModel();
+            var content = JsonConvert.SerializeObject(body);
+            var httpContent = new StringContent(content, Encoding.UTF8, "application/json");
+            try
+            {
+                var response = await _httpClient.PostAsync(apiUrl + "/home/bios/socio/searchDeudaSuplemento", httpContent);
+                response.EnsureSuccessStatusCode();
+                var responseContent = await response.Content.ReadAsStringAsync();
+                resp = JsonConvert.DeserializeObject<ResponseModel>(responseContent);
+            }
+            catch (HttpRequestException ex)
+            {
+                resp.Message1 = ex.Message;
+            }
+            return resp;
+        }
+
 
         public async Task<ResponseGeneric> MembresiasList(object body)
         {
