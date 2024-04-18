@@ -101,6 +101,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             panelDeviceConnect.Region = Region.FromHrgn(CreateRoundRectRgn
                 (0, 0, panelDeviceConnect.Width, panelDeviceConnect.Height, 20, 20));
 
+            //new code
+            btnVerDeudaProducto.Visible = false;
+            btnVerDeudaProducto.BackgroundImageLayout = ImageLayout.Stretch;
+
             //TabControl.TabPages[0].Text = "Asistencia cliente";
             //TabControl.TabPages[1].Text = "Configuracion";
             //TabControl.TabPages[2].Text = "Asistencia personal";
@@ -262,6 +266,13 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 TOneControl(hfijo);
                 TTwoControl(hfijo);
             }
+            else if (hfijo.tipoTurno == 0)
+            {
+                //T1
+                pTurno1.Visible = true;
+                TOneControl(hfijo);
+               
+            }
             else
             {
                 Console.WriteLine("");
@@ -283,7 +294,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                         CodigoUnidadNegocio = DataSession.Unidad,
                         CodigoSede = DataSession.Sede,
                         NumeroDocumento = inst.Personal.DNI,
-                        Fecha = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"),
+                        Fecha = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                         OperacionMarcacion = operation
                     };
                     var resp = await api.MarcarPersonalFijo(body);
@@ -413,7 +424,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                         if (dataSocioAll.Membresias != null && dataSocioAll.Membresias.Count > 0)
                         {
                             var membresia = dataSocioAll.Membresias[0];
-                            txtMPromo.Text = membresia.NombrePaquete.ToString();
+                            //txtMPromo.Text = membresia.NombrePaquete.ToString();
                             txtMFecha.Text = membresia.FCrecionText.ToString();
                             txtMFInicio.Text = membresia.DesFechaInicio.ToString();
                             txtMFin.Text = membresia.DesFechaFin.ToString();
@@ -434,6 +445,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                             dataSocioAll.MembresiasSelected = membresia;
                             string deudaMem = dataSocioAll.MembresiasSelected.Debe > 0 ? $"DEBE {dataSocioAll.MembresiasSelected.Debe} EN MEMBRESIA" : "";
                             StlyDeudaM(deudaMem, !string.IsNullOrEmpty(deudaMem));
+                            btnVerDeudaProducto.Visible = true;
                             if (stGlobal.CheackAutomatic)
                             {
                                 btnMarkAsistence.PerformClick();
@@ -491,6 +503,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             txtMContrato.Text = "";
             txtMResponsable.Text = "";
             txtMSede.Text = "";
+            btnVerDeudaProducto.Visible = false;
 
         }
 
@@ -542,7 +555,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     var socio = dataSocioAll.Socio;
                     lblFullName_.Text = $"{socio.Nombre}, {socio.Apellidos}".ToUpper();
                     string deudaStr = socio.DeudaSuplemento > 0 ? $"DEBE {socio.DeudaSuplemento} EN PRODUCTOS" : "";
-                    StlyDeuda(deudaStr, deudaStr.Length > 0 ? true : false);
+                    //StlyDeuda(deudaStr, deudaStr.Length > 0 ? true : false);
                     if (string.IsNullOrEmpty(socio.ImagenUrl) == false && validateHttps(socio.ImagenUrl) == true)
                     {
                         using (WebClient webClient = new WebClient())
@@ -1133,7 +1146,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                                         Sede = DataSession.Sede,
                                         Socio = dataSocioAll.MembresiasSelected.CodigoSocio,
                                         Membresia = dataSocioAll.MembresiasSelected.CodigoMenbresia,
-                                        Fecha = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss")
+                                        Fecha = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
                                     };
 
                                     var res = await serv.MarkAsistence(data);
@@ -1524,6 +1537,55 @@ namespace ZKTecoFingerPrintScanner_Implementation
             _ = MarckPersonalFijoAsync(8);
         }
 
+        //new code
+        public async Task getDeudaProducto()
+        {
 
+            try
+            {
+                var socio = dataSocioAll.Socio;
+                AppsFitService api = new AppsFitService();
+
+                var body = new
+                {
+                    CodigoUnidadNegocio = DataSession.Unidad,
+                    CodigoSede = DataSession.Sede,
+                    Dni = socio.DNI
+                };
+
+                var resp = await api.SearchDeudaProductoSocio(body);
+
+                if (resp.Success)
+                {
+                    StlyDeuda("DEBE " + resp.Data.deuda_product + " EN PRODUCTOS", !string.IsNullOrEmpty("" + resp.Data.deuda_product));
+
+                }
+                else
+                {
+                    // NO TIENE deuda
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Algo salio mal" + ex);
+            }
+        }
+
+        private void btnVerDeudaProducto_Click(object sender, EventArgs e)
+        {
+            //_ = getDeudaProducto();
+        }
+
+        private void tableLayoutPanel24_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
