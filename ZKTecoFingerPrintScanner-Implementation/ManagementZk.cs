@@ -212,7 +212,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
 
         //capture
-        private void DoCapture()
+        private async void DoCapture()
         {
             try
             {
@@ -223,7 +223,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
                     if (ret == zkfp.ZKFP_ERR_OK)
                     {
-                        HandleBio();
+                       await HandleBio();
                     }
                     Thread.Sleep(100);
                 }

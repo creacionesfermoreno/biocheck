@@ -102,8 +102,8 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 (0, 0, panelDeviceConnect.Width, panelDeviceConnect.Height, 20, 20));
 
             //new code
-            btnVerDeudaProducto.Visible = false;
-            btnVerDeudaProducto.BackgroundImageLayout = ImageLayout.Stretch;
+            //btnVerDeudaProducto.Visible = false;
+            //btnVerDeudaProducto.BackgroundImageLayout = ImageLayout.Stretch;
 
             //TabControl.TabPages[0].Text = "Asistencia cliente";
             //TabControl.TabPages[1].Text = "Configuracion";
@@ -445,7 +445,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                             dataSocioAll.MembresiasSelected = membresia;
                             string deudaMem = dataSocioAll.MembresiasSelected.Debe > 0 ? $"DEBE {dataSocioAll.MembresiasSelected.Debe} EN MEMBRESIA" : "";
                             StlyDeudaM(deudaMem, !string.IsNullOrEmpty(deudaMem));
-                            btnVerDeudaProducto.Visible = true;
+                            //btnVerDeudaProducto.Visible = true;
                             if (stGlobal.CheackAutomatic)
                             {
                                 btnMarkAsistence.PerformClick();
@@ -1540,7 +1540,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
         //new code
         public async Task getDeudaProducto()
         {
-
             try
             {
                 var socio = dataSocioAll.Socio;
@@ -1563,6 +1562,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 else
                 {
                     // NO TIENE deuda
+                    StlyDeuda("NO TIENE DEUDA");
                 }
 
 
@@ -1575,7 +1575,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
         private void btnVerDeudaProducto_Click(object sender, EventArgs e)
         {
-            //_ = getDeudaProducto();
+            _ = getDeudaProducto();
         }
 
         private void tableLayoutPanel24_Paint(object sender, PaintEventArgs e)
@@ -1584,6 +1584,26 @@ namespace ZKTecoFingerPrintScanner_Implementation
         }
 
         private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDeudaProductos_Click(object sender, EventArgs e)
+        {
+            
+            if (dataSocioAll.Membresias != null && dataSocioAll.Membresias.Count == 0)
+            {
+                MessageBox.Show("Antes de continuar, por favor realice la búsqueda mediante huella dactilar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+               btnVerDeudaProducto.Visible = true;
+            }
+
+        }
+
+        private void TabSelector_Click(object sender, EventArgs e)
         {
 
         }
