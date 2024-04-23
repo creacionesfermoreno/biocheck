@@ -1157,6 +1157,8 @@ namespace ZKTecoFingerPrintScanner_Implementation
                                         // Update List
                                         await managementZk.ReloadDataAsistence();
                                         _ = Task.Run(() => LoadDataToGrids());
+                                        //Timer 10 seg
+                                        cleanAll();
                                     }
                                 }
                                 else
@@ -1183,7 +1185,14 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
         }
 
-
+        private async void cleanAll()
+        {
+            await Task.Delay(5000);
+            clearMembresiaText();
+            clearMA();
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+        }
 
 
         // Function to validate the membership and return a message
