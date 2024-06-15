@@ -7,6 +7,7 @@ using System.Deployment.Application;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Messaging;
 using System.Net;
 using System.Net.Http;
@@ -41,7 +42,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
         private DataSocioAll dataSocioAll;
         private STGlobal stGlobal;
-
+        private SoundPlayer soundAccessPlayer;
+        private SoundPlayer soundRestringPlayer;
+        private SoundPlayer soundOtrosPlayer;
         private int SelectedIndexPersonal = 0;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -67,6 +70,11 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
             dataSocioAll = DataSocioAll.Instance;
             stGlobal = STGlobal.Instance;
+            //soundPlayer = new SoundPlayer(@"C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Resources\accesoSound.wav");
+
+            soundAccessPlayer = new SoundPlayer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Resources\accesoSound.wav"));
+            soundRestringPlayer = new SoundPlayer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Resources\restringSound.wav"));
+            soundOtrosPlayer = new SoundPlayer(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Resources\soundOtros.wav"));
 
             managementZk = new ManagementZk(this);
             // managementZk.FingerprintCaptured += OnFingerprintCaptured;
@@ -305,16 +313,19 @@ namespace ZKTecoFingerPrintScanner_Implementation
                         renderHorarioFijo(inst.HorarioFijo);
                         StatusMessageD($"ASISTENCIA REGISTRADA", true, false);
                         inst.SelectedPersonal = false;
+                        cleanMesajeAP();
                     }
                     else
                     {
                         StatusMessageD($"{resp.Message1}", false, false);
+                        cleanMesajeAP();
                     }
                 }
                 else
                 {
                     StatusMessageD($"", false, true);
                     MessageBox.Show("PARA MARCAR DEBE BUSCAR UN PERSONAL VÁLIDO");
+                    cleanMesajeAP();
                 }
             }
             catch (Exception ex)
@@ -352,8 +363,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     RenderLViewProfesionales();
                     StatusMessageD($"ASISTENCIA REGISTRADA", true, false);
                     hsgt.SelectedPersonal = false;
+                    cleanMesajeAP();
                 }
-                else { StatusMessageD($"{resp.Message1}", false, false); }
+                else { 
+                    StatusMessageD($"{resp.Message1}", false, false);
+                    cleanMesajeAP();
+                }
             }
             catch (Exception ex)
             {
@@ -385,6 +400,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                         InfoPersonal(new SocioModel(), true);
                         StatusMessage("NO SE ENCONTRO PERSONAL", false);
                         StatusMessageD($"", false, true);
+                        cleanPersonalN();
                         break;
 
                     //profesionales
@@ -399,6 +415,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                         lboxProfesionales.Items.Clear();
                         StatusMessage("NO SE ENCONTRO PERSONAL", false);
                         StatusMessageD($"", false, true);
+                        cleanPersonalN();
                         break;
 
                     default:
@@ -458,14 +475,21 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
                         break;
                     case "MA-F":
+                        soundRestringValidate();
                         SocioInfoMatch(false);
-                        StatusMessage($"No se encontro socio {DateTime.Now}", false);
+                        //StatusMessage($"No se encontro socio {DateTime.Now}", false);
                         MessageStatusMembresia("ESTADO DE MEMBRESIA", 0, true);
                         StatusMessageD("", false, true);
                         lblPlan.Text = "";
                         clearMembresiaText();
                         listBox1.Items.Clear();
                         listBox2.Items.Clear();
+                        lblMessage.Message = $"No se encontro socio {DateTime.Now}";
+                        lblMessage.StatusBarBackColor = Color.FromArgb(230, 112, 134);
+                        panelMA.BackColor = Color.FromArgb(230, 112, 134);
+                        StlyDeudaM("", false);
+                        StlyDeuda("", false);
+                        cleanSocioN();
                         break;
                     case "REG":
                         StatusMessage("Registro de huella exitosa", true);
@@ -682,11 +706,21 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 }
 
                 DataManagerD dpre = new DataManagerD();
-                if (string.IsNullOrEmpty(dpre.ReadData()))
+                DataManagerTime dtime = new DataManagerTime();
+                DataManagerSonido dsonido = new DataManagerSonido();
+                if (string.IsNullOrEmpty(dpre.ReadData()) || string.IsNullOrEmpty(dtime.ReadData()) || string.IsNullOrEmpty(dsonido.ReadData()))
                 {
                     tbPrecicion.Value = 60;
                     lblPrecicion.Text = $"60%";
                     stGlobal.Precision = 60;
+
+                    //tiempo
+                    nudTiempoInfo.Value = 5;
+                    stGlobal.TiempoInfo = 5;
+
+                    //sonido
+                    chkSonido.Checked = false;
+                    stGlobal.SonidoAsistencia = false;
                 }
                 else
                 {
@@ -694,6 +728,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     tbPrecicion.Value = Convert.ToInt32(pre);
                     lblPrecicion.Text = $"{pre}%";
                     stGlobal.Precision = Convert.ToInt32(pre);
+
+                    var tim = dtime.ReadData();
+                    nudTiempoInfo.Value = Convert.ToInt32(tim);
+
+                    var sonid = dsonido.ReadData();
+                    chkSonido.Checked = Convert.ToBoolean(sonid);
                 }
                 rbTSocio.Checked = true;
                 stGlobal.TypeRegister = 1;
@@ -799,12 +839,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 if (reset)
                 {
                     lblMessage.Message = "";
-                    lblMessage.StatusBarBackColor = Color.White;
+                    lblMessage.StatusBarBackColor = Color.Transparent;
                 }
                 else
                 {
                     lblMessage.Message = message;
-                    lblMessage.StatusBarForeColor = Color.White;
+                    lblMessage.StatusBarForeColor = Color.Transparent;
                     if (success)
                     {
 
@@ -828,11 +868,11 @@ namespace ZKTecoFingerPrintScanner_Implementation
             try
             {
                 statusBar1.Message = message;
-                statusBar1.StatusBarForeColor = Color.White;
+                statusBar1.StatusBarForeColor = Color.Transparent;
 
                 if (reset)
                 {
-                    statusBar1.StatusBarBackColor = Color.White;
+                    statusBar1.StatusBarBackColor = Color.Transparent;
                 }
                 else
                 {
@@ -893,17 +933,20 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     //socio
                     if (stGlobal.TypeRegister == 1) //socio
                     {
+                        cleanAllTab2();
                         SearchData(1);
                     }
 
                     //pf
                     if (stGlobal.TypeRegister == 2)
                     {
+                        cleanAllTab2();
                         SearchData(2);
                     }
                     //event
                     if (stGlobal.TypeRegister == 3)
                     {
+                        cleanAllTab2();
                         SearchData(3);
                     }
                 }
@@ -921,15 +964,21 @@ namespace ZKTecoFingerPrintScanner_Implementation
             {
                 lblMessage.Message = "";
                 lblIntents.Text = "3 veces más";
-                PicRegister.Image = null;
-                lblMessage.StatusBarBackColor = Color.FromArgb(250, 250, 250);
+                PicRegister.Image = BIOCHECK.Properties.Resources.huell;
+                lblMessage.StatusBarBackColor = Color.Transparent;
             }
             catch (Exception ex)
             {
                 managementZk.createFileLog("ScreeHome", ex);
             }
         }
-
+        public void cleanAllTab2()
+        {
+            lblIntents.Text = "";
+            lblMessage.StatusBarBackColor = Color.Transparent;
+            PicRegister.Image = BIOCHECK.Properties.Resources.huell;
+            StatusMessageD("", false, true);
+        }
         public void clearTab2()
         {
             try
@@ -943,13 +992,19 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 TxtName.Text = "";
                 TxtSurname.Text = "";
                 TxtNro.Text = "";
-                lblMessage.StatusBarBackColor = Color.FromArgb(250, 250, 250);
+                lblMessage.StatusBarBackColor = Color.FromArgb(37, 47, 59);
                 StatusMessageD("", false, true);
 
             }
             catch (Exception ex) { managementZk.createFileLog("ScreeHome", ex); }
         }
-
+        public void clearTab3()
+        {
+            lblMessage.Message = "";
+            statusBar1.Message = "";
+            lblMessage.StatusBarBackColor = Color.Transparent;
+            statusBar1.StatusBarBackColor = Color.Transparent;
+        }
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -961,8 +1016,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     managementZk.SetMatchSearch(true);
                     managementZk.SetIsRegister(false);
                     stGlobal.TypeMatch = 1;
-                    clearMA();
-
+                    cleanAllTab1();
                     listBox1.Items.Clear();
                     listBox2.Items.Clear();
                 }
@@ -974,6 +1028,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
                 if (TabControl.SelectedTab == tabPage3)
                 {
+                    clearTab3();
                     managementZk.SetIsRegister(false);
                     managementZk.SetMatchSearch(false);
                     getConfiguration();
@@ -1039,8 +1094,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
 
         }
-
-        private void PicCloseHome_Click(object sender, EventArgs e)
+        private void closeWindow()
         {
             try
             {
@@ -1059,8 +1113,13 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
             catch (Exception ex)
             {
-                managementZk.createFileLog("ScreeHome", ex);
+                managementZk.createFileLog("ScreeHomeLite", ex);
             }
+
+        }
+        private void PicCloseHome_Click(object sender, EventArgs e)
+        {
+            closeWindow();
         }
 
 
@@ -1078,7 +1137,12 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 PicMaUser.Image = null;
                 lblPlan.Text = "NOMBRE DEL PLAN";
                 lblMessageMem.Text = "ESTADO MEMBRESIA";
+                //lblDeudaMembresia.Text = "DEUDA MEMBRESIA";
+                //lblDeudaProductos.Text = "DEUDA PRODUCTOS";
                 lblMessage.Message = "";
+                //lblDeudaMembresia.BackColor = Color.Gray;
+                //lblDeudaProductos.BackColor = Color.Gray;
+                lblMessageMem.BackColor = Color.Transparent;
                 picHuellaMA.Image = BIOCHECK.Properties.Resources.huell;
                 PicMaUser.Image = BIOCHECK.Properties.Resources.user2;
 
@@ -1090,6 +1154,66 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
         }
 
+        private async void cleanSocioN()
+        {
+            await Task.Delay(1000);
+            picHuellaMA.Image = BIOCHECK.Properties.Resources.huell;
+            lblMessage.Message = "";
+            lblMessage.StatusBarBackColor = Color.Transparent;
+            panelMA.BackColor = Color.FromArgb(233, 233, 233);
+        }
+        private async void cleanPersonalN()
+        {
+            await Task.Delay(2000);
+            pbAPHuella.Image = BIOCHECK.Properties.Resources.huell;
+            lblMessage.Message = "";
+            lblMessage.StatusBarBackColor = Color.Transparent;
+        }
+        private async void cleanMesajeAP()
+        {
+            await Task.Delay(2000);
+            StatusMessageD("", false, true);
+            lblMessage.Message = "";
+            lblMessage.StatusBarBackColor = Color.Transparent;
+        }
+
+        private void soundAccessValidate()
+        {
+            if (chkSonido.Checked)
+            {
+                soundAccessPlayer.Play();
+            }
+            else
+            {
+                soundAccessPlayer.Stop();
+            }
+
+        }
+        private void soundRestringValidate()
+        {
+            if (chkSonido.Checked)
+            {
+                soundRestringPlayer.Play();
+            }
+            else
+            {
+                soundRestringPlayer.Stop();
+            }
+
+        }
+
+        private void soundOtrosValidate()
+        {
+            if (chkSonido.Checked)
+            {
+                soundOtrosPlayer.Play();
+            }
+            else
+            {
+                soundOtrosPlayer.Stop();
+            }
+
+        }
 
 
         private void timerNow_Tick(object sender, EventArgs e)
@@ -1157,7 +1281,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                                         // Update List
                                         await managementZk.ReloadDataAsistence();
                                         _ = Task.Run(() => LoadDataToGrids());
-                                        //Timer 10 seg
+                                        soundAccessValidate();
                                         cleanAll();
                                     }
                                 }
@@ -1187,12 +1311,27 @@ namespace ZKTecoFingerPrintScanner_Implementation
 
         private async void cleanAll()
         {
-            await Task.Delay(5000);
+            int seg = (int)nudTiempoInfo.Value * 1000;
+            await Task.Delay(seg);
             clearMembresiaText();
             clearMA();
             listBox1.Items.Clear();
             listBox2.Items.Clear();
+            lblMessage.Message = "";
+            lblMessage.StatusBarBackColor = Color.Transparent;
         }
+
+        private void cleanAllTab1()
+        {
+            clearMembresiaText();
+            clearMA();
+            StlyDeudaM("", false);
+            StlyDeuda("", false);
+            cleanSocioN();
+            lblMessage.Message = "";
+            lblMessage.StatusBarBackColor = Color.Transparent;
+        }
+
 
 
         // Function to validate the membership and return a message
@@ -1202,20 +1341,24 @@ namespace ZKTecoFingerPrintScanner_Implementation
             {
                 if (membresia.ObtenerDisponibilidadHorarioPaquete <= 0)
                 {
+                    soundOtrosValidate();
                     return "ESTA MEMBRESIA NO TIENE ACCESO PARA ESTA SEDE.";
                 }
 
                 if (membresia.flagPaqueteSedePermiso <= 0)
                 {
+                    soundOtrosValidate();
                     return "HORARIO NO DISPONIBLE";
                 }
 
                 if (membresia.NroIngreso < membresia.NroIngresoActual)
                 {
+                    soundOtrosValidate();
                     return "NRO ASISTENCIAS LLEGO A SU LIMITE, REVISA EL NRO DE SESIONES DE LA MEMBRESIA";
                 }
                 if (membresia.Estado == 2)
                 {
+                    soundOtrosValidate();
                     return "😨 SU MEMBRESÍA FINALIZÓ 👎";
                 }
             }
@@ -1488,7 +1631,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             }
             else
             {
-                StatusMessageD($"xxxx", false, true);
+                StatusMessageD($"", false, true);
                 MessageBox.Show("DEBE SELECIONAR UNA CLASE");
             }
         }
@@ -1615,6 +1758,69 @@ namespace ZKTecoFingerPrintScanner_Implementation
         private void TabSelector_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void nudTiempoInfo_ValueChanged(object sender, EventArgs e)
+        {
+            int time = (int)nudTiempoInfo.Value;
+            stGlobal.TiempoInfo = time;
+            DataManagerTime dmt = new DataManagerTime();
+            dmt.SaveData(time.ToString());
+        }
+
+        private void chkSonido_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox checkBox = (CheckBox)sender;
+            stGlobal.SonidoAsistencia = checkBox.Checked;
+            DataManagerSonido dms = new DataManagerSonido();
+            dms.SaveData(checkBox.Checked.ToString());
+        }
+
+        private void pictureBox28_Click(object sender, EventArgs e)
+        {
+            soundAccessValidate();
+        }
+
+        private void ScreenHome_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbCerrarSesion_Click(object sender, EventArgs e)
+        {
+            DataManagerTypeAcceso datAcc = new DataManagerTypeAcceso();
+            string type = datAcc.ReadData();
+            if (type == "1")
+            {
+                Login login = new Login();
+                LoadingForm loadingForm = new LoadingForm();
+                login.FormClosed += ScreenHome_FormClosed;
+                loadingForm.FormClosed += ScreenHome_FormClosed;
+                closeWindow();
+                DataManager dm = new DataManager();
+                dm.SaveData("");
+            }
+            else
+            {
+                Login home = new Login();
+                LoadingForm loadingForm = new LoadingForm();
+                home.FormClosed += ScreenHome_FormClosed;
+                loadingForm.FormClosed += ScreenHome_FormClosed;
+                closeWindow();
+                DataManager dm = new DataManager();
+                dm.SaveData("");
+            }
+        }
+
+        private void btnAccessLite_Click(object sender, EventArgs e)
+        {
+            managementZk.Disconnect();
+            managementZk.EventGeneral -= OnEventGeneral;
+            managementZk.EventPersonal -= OnEventPersonal;
+            this.Hide();
+            Login login = new Login();
+            login.FormClosed += ScreenHome_FormClosed;
+            login.ShowDialog();
         }
     }
 }

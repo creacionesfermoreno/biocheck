@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BIOCHECK;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -19,6 +20,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             PLoading.ForeColor = Color.FromArgb(255, 0, 0);
             PLoading.BackColor = Color.FromArgb(150, 0, 0);
             btnPase.Visible = false;
+            plBtnBiotime.Visible = false;
+            plBtnBiotimeLite.Visible = false;
+            initKey();
         }
 
         private void BtnCloseLogin_Click(object sender, EventArgs e)
@@ -63,7 +67,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     }
                 }
                 SbMessage.Message = resp.Message1;
-                btnPase.Visible = true;
+                //btnPase.Visible = true;
+                plBtnBiotime.Visible = true;
+                plBtnBiotimeLite.Visible = true;
 
                 DataSession.DKey = txtDkey.Text;
                 DataSession.Unidad = item.unidad;
@@ -105,6 +111,36 @@ namespace ZKTecoFingerPrintScanner_Implementation
             Application.Exit();
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DataManagerTypeAcceso dataManager = new DataManagerTypeAcceso();
+            string valueType = "2"; //Lite
+            dataManager.SaveData(valueType);
+
+            DataSession.DKey = txtDkey.Text;
+            this.Hide();
+            ScreenHomeLite home = new ScreenHomeLite();
+            home.FormClosed += Login_FormClosed;
+            home.ShowDialog();
+        }
+
+        private void btnBio_Click(object sender, EventArgs e)
+        {
+            DataManagerTypeAcceso dataManager = new DataManagerTypeAcceso();
+            string valueType = "1"; //Normal
+            dataManager.SaveData(valueType);
+
+            DataSession.DKey = txtDkey.Text;
+            this.Hide();
+            ScreenHome home = new ScreenHome();
+            home.FormClosed += Login_FormClosed;
+            home.ShowDialog();
+        }
+        private void initKey()
+        {
+            DataManager dm = new DataManager();
+            string key = dm.ReadData();
+            txtDkey.Text = key;
+        }
     }
 }
