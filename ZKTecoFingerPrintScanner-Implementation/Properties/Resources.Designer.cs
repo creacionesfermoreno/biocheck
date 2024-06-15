@@ -103,6 +103,16 @@ namespace BIOCHECK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrarsesion {
+            get {
+                object obj = ResourceManager.GetObject("cerrarsesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap check {
             get {
                 object obj = ResourceManager.GetObject("check", resourceCulture);
@@ -346,6 +356,16 @@ namespace BIOCHECK.Properties {
         internal static System.Drawing.Bitmap signodolar {
             get {
                 object obj = ResourceManager.GetObject("signodolar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sonido {
+            get {
+                object obj = ResourceManager.GetObject("sonido", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

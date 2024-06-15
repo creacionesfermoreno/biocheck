@@ -59,5 +59,85 @@ namespace ZKTecoFingerPrintScanner_Implementation.Helpers
             return string.Empty;
         }
     }
+    public class DataManagerTime
+    {
+        private string filePath;
 
+        public DataManagerTime()
+        {
+            string fileName = "time.txt";
+            string projectPath = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+            string filePath = System.IO.Path.Combine(projectPath, fileName);
+            this.filePath = filePath;
+        }
+
+        public void SaveData(string data)
+        {
+            File.WriteAllText(filePath, data);
+        }
+
+        public string ReadData()
+        {
+            if (File.Exists(filePath))
+            {
+                return File.ReadAllText(filePath);
+            }
+
+            return string.Empty;
+        }
+    }
+    public class DataManagerSonido
+    {
+        private string filePath;
+
+        public DataManagerSonido()
+        {
+            string fileName = "sonido.txt";
+            string projectPath = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+            string filePath = System.IO.Path.Combine(projectPath, fileName);
+            this.filePath = filePath;
+        }
+
+        public void SaveData(string data)
+        {
+            File.WriteAllText(filePath, data);
+        }
+
+        public string ReadData()
+        {
+            if (File.Exists(filePath))
+            {
+                return File.ReadAllText(filePath);
+            }
+
+            return string.Empty;
+        }
+    }
+    public class DataManagerTypeAcceso
+    {
+        private string filePath;
+
+        public DataManagerTypeAcceso()
+        {
+            string fileName = "access.txt";
+            string projectPath = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+            string filePath = System.IO.Path.Combine(projectPath, fileName);
+            this.filePath = filePath;
+        }
+
+        public void SaveData(string data)
+        {
+            File.WriteAllText(filePath, data);
+        }
+
+        public string ReadData()
+        {
+            if (File.Exists(filePath))
+            {
+                return File.ReadAllText(filePath);
+            }
+
+            return string.Empty;
+        }
+    }
 }

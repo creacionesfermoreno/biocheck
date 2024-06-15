@@ -48,10 +48,18 @@
             this.PLoading = new System.Windows.Forms.ProgressBar();
             this.btnPase = new System.Windows.Forms.Button();
             this.SbMessage = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
+            this.btnBio = new System.Windows.Forms.Button();
+            this.btnAccessLite = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.plBtnBiotime = new System.Windows.Forms.Panel();
+            this.plBtnBiotimeLite = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCloseLogin)).BeginInit();
+            this.plBtnBiotime.SuspendLayout();
+            this.plBtnBiotimeLite.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,7 +72,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 330);
+            this.panel1.Size = new System.Drawing.Size(250, 430);
             this.panel1.TabIndex = 0;
             // 
             // label6
@@ -303,12 +311,90 @@
             this.SbMessage.StatusBarForeColor = System.Drawing.Color.DimGray;
             this.SbMessage.TabIndex = 14;
             // 
+            // btnBio
+            // 
+            this.btnBio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.btnBio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBio.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnBio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnBio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnBio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBio.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBio.ForeColor = System.Drawing.Color.White;
+            this.btnBio.Location = new System.Drawing.Point(14, 38);
+            this.btnBio.Name = "btnBio";
+            this.btnBio.Size = new System.Drawing.Size(235, 35);
+            this.btnBio.TabIndex = 17;
+            this.btnBio.Text = "BioCheck";
+            this.btnBio.UseVisualStyleBackColor = false;
+            this.btnBio.Click += new System.EventHandler(this.btnBio_Click);
+            // 
+            // btnAccessLite
+            // 
+            this.btnAccessLite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.btnAccessLite.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAccessLite.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnAccessLite.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.btnAccessLite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnAccessLite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccessLite.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccessLite.ForeColor = System.Drawing.Color.White;
+            this.btnAccessLite.Location = new System.Drawing.Point(6, 38);
+            this.btnAccessLite.Name = "btnAccessLite";
+            this.btnAccessLite.Size = new System.Drawing.Size(235, 35);
+            this.btnAccessLite.TabIndex = 18;
+            this.btnAccessLite.Text = "BioCheck Lite";
+            this.btnAccessLite.UseVisualStyleBackColor = false;
+            this.btnAccessLite.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.label7.Location = new System.Drawing.Point(11, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(214, 17);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Pensado para pantallas grandes";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.label8.Location = new System.Drawing.Point(3, 11);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(225, 17);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Pensado para pantallas pequeñas";
+            // 
+            // plBtnBiotime
+            // 
+            this.plBtnBiotime.Controls.Add(this.label7);
+            this.plBtnBiotime.Controls.Add(this.btnBio);
+            this.plBtnBiotime.Location = new System.Drawing.Point(256, 339);
+            this.plBtnBiotime.Name = "plBtnBiotime";
+            this.plBtnBiotime.Size = new System.Drawing.Size(260, 79);
+            this.plBtnBiotime.TabIndex = 21;
+            // 
+            // plBtnBiotimeLite
+            // 
+            this.plBtnBiotimeLite.Controls.Add(this.label8);
+            this.plBtnBiotimeLite.Controls.Add(this.btnAccessLite);
+            this.plBtnBiotimeLite.Location = new System.Drawing.Point(532, 339);
+            this.plBtnBiotimeLite.Name = "plBtnBiotimeLite";
+            this.plBtnBiotimeLite.Size = new System.Drawing.Size(246, 79);
+            this.plBtnBiotimeLite.TabIndex = 22;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(780, 330);
+            this.ClientSize = new System.Drawing.Size(780, 430);
+            this.Controls.Add(this.plBtnBiotimeLite);
+            this.Controls.Add(this.plBtnBiotime);
             this.Controls.Add(this.btnPase);
             this.Controls.Add(this.SbMessage);
             this.Controls.Add(this.PicLogo);
@@ -331,12 +417,15 @@
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.Load += new System.EventHandler(this.Login_Load);
-           
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCloseLogin)).EndInit();
+            this.plBtnBiotime.ResumeLayout(false);
+            this.plBtnBiotime.PerformLayout();
+            this.plBtnBiotimeLite.ResumeLayout(false);
+            this.plBtnBiotimeLite.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,5 +452,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnBio;
+        private System.Windows.Forms.Button btnAccessLite;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel plBtnBiotime;
+        private System.Windows.Forms.Panel plBtnBiotimeLite;
     }
 }
