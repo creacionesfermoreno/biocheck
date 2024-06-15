@@ -240,6 +240,8 @@ namespace ZKTecoFingerPrintScanner_Implementation.Models
         public string SearchRegister { get; set; }
         public bool CheackAutomatic { get; set; }
         public string KeyEmpresa { get; set; }
+        public int TiempoInfo { get; set; }
+        public bool SonidoAsistencia { get; set; }
     }
 
 
