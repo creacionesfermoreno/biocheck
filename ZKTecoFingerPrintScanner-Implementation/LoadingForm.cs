@@ -37,7 +37,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 {
                     AppsFitService serv = new AppsFitService();
                     var isValid = await serv.VerifyDkey(new { DefaultKeyEmpresa = key });
-                    if (isValid.Success)
+                    if (isValid.Success && isValid.Production == true)
                     {
                         ScreenHome home = new ScreenHome();
                         DataSession.DKey = key;
@@ -54,10 +54,16 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     }
                     else
                     {
-                        Login login = new Login();
+                        //Login login = new Login();
+                        //this.Hide();
+                        //login.FormClosed += LoadingForm_FormClosed;
+                        //login.ShowDialog();
+                        
                         this.Hide();
-                        login.FormClosed += LoadingForm_FormClosed;
-                        login.ShowDialog();
+                        //Mostrar Aviso
+                        Aviso aviso = new Aviso();
+                        aviso.ShowDialog();
+                       
 
                     }
                 }
@@ -65,7 +71,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 {
                     AppsFitService serv = new AppsFitService();
                     var isValid = await serv.VerifyDkey(new { DefaultKeyEmpresa = key });
-                    if (isValid.Success)
+                    if (isValid.Success && isValid.Production == true)
                     {
                         ScreenHomeLite home = new ScreenHomeLite();
                         DataSession.DKey = key;
@@ -82,10 +88,16 @@ namespace ZKTecoFingerPrintScanner_Implementation
                     }
                     else
                     {
-                        Login login = new Login();
+                        //Si Esta desactivado muestra login y aviso
+                        //Login login = new Login();
+                        //this.Hide();
+                        //login.FormClosed += LoadingForm_FormClosed;
+                        //login.ShowDialog();
                         this.Hide();
-                        login.FormClosed += LoadingForm_FormClosed;
-                        login.ShowDialog();
+                        //Mostrar Aviso
+                        Aviso aviso = new Aviso();
+                        aviso.ShowDialog();
+                        
 
                     }
                 }
