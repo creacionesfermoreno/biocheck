@@ -34,6 +34,7 @@
             this.TabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.btnVerDeudaProducto = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.txtMPromo = new System.Windows.Forms.Label();
@@ -43,8 +44,8 @@
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.label32 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblDeudaMembresia = new System.Windows.Forms.Label();
             this.lblDeudaProductos = new System.Windows.Forms.Label();
+            this.lblDeudaMembresia = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tlBgEstadoMembresia = new System.Windows.Forms.TableLayoutPanel();
             this.panel21 = new System.Windows.Forms.Panel();
@@ -230,10 +231,10 @@
             this.lblSerie = new System.Windows.Forms.Label();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.timerNow = new System.Windows.Forms.Timer(this.components);
-            this.btnVerDeudaProducto = new System.Windows.Forms.PictureBox();
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVerDeudaProducto)).BeginInit();
             this.panel18.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -313,7 +314,6 @@
             this.tableLayoutPanel19.SuspendLayout();
             this.panelDeviceConnect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVerDeudaProducto)).BeginInit();
             this.SuspendLayout();
             // 
             // TabSelector
@@ -371,6 +371,20 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(660, 252);
             this.panel16.TabIndex = 30;
+            // 
+            // btnVerDeudaProducto
+            // 
+            this.btnVerDeudaProducto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnVerDeudaProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerDeudaProducto.Image = global::BIOCHECK.Properties.Resources.img_view;
+            this.btnVerDeudaProducto.Location = new System.Drawing.Point(323, -3);
+            this.btnVerDeudaProducto.Name = "btnVerDeudaProducto";
+            this.btnVerDeudaProducto.Size = new System.Drawing.Size(24, 24);
+            this.btnVerDeudaProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnVerDeudaProducto.TabIndex = 10;
+            this.btnVerDeudaProducto.TabStop = false;
+            this.btnVerDeudaProducto.Visible = false;
+            this.btnVerDeudaProducto.Click += new System.EventHandler(this.btnVerDeudaProducto_Click);
             // 
             // panel18
             // 
@@ -498,22 +512,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(660, 102);
             this.tableLayoutPanel4.TabIndex = 29;
             // 
-            // lblDeudaMembresia
-            // 
-            this.lblDeudaMembresia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDeudaMembresia.AutoSize = true;
-            this.lblDeudaMembresia.BackColor = System.Drawing.Color.Gray;
-            this.lblDeudaMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeudaMembresia.ForeColor = System.Drawing.Color.White;
-            this.lblDeudaMembresia.Location = new System.Drawing.Point(3, 7);
-            this.lblDeudaMembresia.Name = "lblDeudaMembresia";
-            this.lblDeudaMembresia.Padding = new System.Windows.Forms.Padding(5);
-            this.lblDeudaMembresia.Size = new System.Drawing.Size(654, 40);
-            this.lblDeudaMembresia.TabIndex = 6;
-            this.lblDeudaMembresia.Text = "DEUDA MEMBRESIA";
-            this.lblDeudaMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblDeudaProductos
             // 
             this.lblDeudaProductos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -531,6 +529,22 @@
             this.lblDeudaProductos.Text = "DEUDA DE PRODUCTO";
             this.lblDeudaProductos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblDeudaProductos.Click += new System.EventHandler(this.lblDeudaProductos_Click);
+            // 
+            // lblDeudaMembresia
+            // 
+            this.lblDeudaMembresia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDeudaMembresia.AutoSize = true;
+            this.lblDeudaMembresia.BackColor = System.Drawing.Color.Gray;
+            this.lblDeudaMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeudaMembresia.ForeColor = System.Drawing.Color.White;
+            this.lblDeudaMembresia.Location = new System.Drawing.Point(3, 7);
+            this.lblDeudaMembresia.Name = "lblDeudaMembresia";
+            this.lblDeudaMembresia.Padding = new System.Windows.Forms.Padding(5);
+            this.lblDeudaMembresia.Size = new System.Drawing.Size(654, 40);
+            this.lblDeudaMembresia.TabIndex = 6;
+            this.lblDeudaMembresia.Text = "DEUDA MEMBRESIA";
+            this.lblDeudaMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -795,7 +809,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.076142F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.92386F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel3.Controls.Add(this.lblFullName_, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(-1, 195);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -814,7 +828,7 @@
             this.lblFullName_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
             this.lblFullName_.Location = new System.Drawing.Point(13, 0);
             this.lblFullName_.Name = "lblFullName_";
-            this.lblFullName_.Size = new System.Drawing.Size(196, 60);
+            this.lblFullName_.Size = new System.Drawing.Size(193, 60);
             this.lblFullName_.TabIndex = 1;
             this.lblFullName_.Text = "NOMBRES, APELLIDOS COMPLETOS";
             this.lblFullName_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1825,7 +1839,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(155, 13);
             this.label22.TabIndex = 31;
-            this.label22.Text = "version: 2.1.1.0 - BioCheck Lite";
+            this.label22.Text = "version: 2.4.0.0 - BioCheck Lite";
             // 
             // btnSearchUpdate
             // 
@@ -2960,20 +2974,6 @@
             this.timerNow.Interval = 1000;
             this.timerNow.Tick += new System.EventHandler(this.timerNow_Tick);
             // 
-            // btnVerDeudaProducto
-            // 
-            this.btnVerDeudaProducto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnVerDeudaProducto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVerDeudaProducto.Image = global::BIOCHECK.Properties.Resources.img_view;
-            this.btnVerDeudaProducto.Location = new System.Drawing.Point(323, -3);
-            this.btnVerDeudaProducto.Name = "btnVerDeudaProducto";
-            this.btnVerDeudaProducto.Size = new System.Drawing.Size(24, 24);
-            this.btnVerDeudaProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnVerDeudaProducto.TabIndex = 10;
-            this.btnVerDeudaProducto.TabStop = false;
-            this.btnVerDeudaProducto.Visible = false;
-            this.btnVerDeudaProducto.Click += new System.EventHandler(this.btnVerDeudaProducto_Click);
-            // 
             // ScreenHomeLite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2991,6 +2991,7 @@
             this.TabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnVerDeudaProducto)).EndInit();
             this.panel18.ResumeLayout(false);
             this.tableLayoutPanel18.ResumeLayout(false);
             this.tableLayoutPanel18.PerformLayout();
@@ -3101,7 +3102,6 @@
             this.panelDeviceConnect.ResumeLayout(false);
             this.panelDeviceConnect.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVerDeudaProducto)).EndInit();
             this.ResumeLayout(false);
 
         }

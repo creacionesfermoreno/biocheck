@@ -243,6 +243,16 @@ namespace BIOCHECK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_aviso {
+            get {
+                object obj = ResourceManager.GetObject("img-aviso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_view {
             get {
                 object obj = ResourceManager.GetObject("img-view", resourceCulture);

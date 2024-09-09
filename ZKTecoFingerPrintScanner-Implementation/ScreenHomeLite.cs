@@ -316,7 +316,7 @@ namespace BIOCHECK
                     CodigoProfesional = Horario.CodigoProfesional,
                     CodigoPersonalAsistencia = Horario.CodigoPersonalAsistencia ?? "",
                     DiaNumero = Horario.DiaNumero,
-                    Fecha = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"),
+                    Fecha = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                     TipoAsistencia = type
                 };
 

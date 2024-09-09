@@ -51,13 +51,13 @@ namespace ZKTecoFingerPrintScanner_Implementation
             AppsFitService serv = new AppsFitService();
 
             ResponseModel resp = await serv.VerifyDkey(new { DefaultKeyEmpresa = txtDkey.Text });
-            if (resp.Success)
+            if (resp.Success && resp.Production == true)
             {
                 DataItem item = (DataItem)resp.Data;
                 txtName.Text = item.name;
                 txtUneg.Text = item.unidad.ToString();
                 txtSede.Text = item.sede.ToString();
-
+                
                 using (WebClient webClient = new WebClient())
                 {
                     byte[] imageData = webClient.DownloadData(item.image);
@@ -78,14 +78,22 @@ namespace ZKTecoFingerPrintScanner_Implementation
                 DataSession.Logo = item.image;
                 DataSession.Name = item.name;
 
-
+                //login
                 DataManager dataManager = new DataManager();
                 string dataToSave = txtDkey.Text;
                 dataManager.SaveData(dataToSave);
             }
             else
             {
-                SbMessage.Message = resp.Message1;
+                //SbMessage.Message = resp.Message1;
+                
+                //Aviso
+                Aviso aviso = new Aviso();
+                aviso.ShowDialog();
+
+                //Limpiar Data
+                DataManager dm = new DataManager();
+                dm.SaveData("");
             }
             PLoading.Visible = false;
 
