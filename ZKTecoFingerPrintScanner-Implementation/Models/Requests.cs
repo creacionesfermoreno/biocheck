@@ -21,6 +21,7 @@ namespace ZKTecoFingerPrintScanner_Implementation.Models
     {
         
         public string Message1 { get; set; }
+        public bool Production { get; set; }
         public bool Success { get; set; }
         [JsonProperty("Date")]
         public DataItem Data { get; set; }

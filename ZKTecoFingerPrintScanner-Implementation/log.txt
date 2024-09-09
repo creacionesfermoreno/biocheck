@@ -1,0 +1,87 @@
+
+File: ScreeHomeLite (02/07/2024 16:41:17)
+Error: No se puede cargar el archivo DLL 'libzkfp.dll': No se puede encontrar el módulo especificado. (Excepción de HRESULT: 0x8007007E)
+Method: Int32 ZKFPM_Init()
+Linea:    en libzkfpcsharp.zkfp.ZKFPM_Init()
+   en libzkfpcsharp.zkfp.Initialize()
+   en ZKTecoFingerPrintScanner_Implementation.ManagementZkLite.Initialize() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ManagementZk.cs:línea 910
+   en BIOCHECK.ScreenHomeLite.BtnConnectionNew_Click(Object sender, EventArgs e) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 1302
+
+File: ScreenHomeLite (02/07/2024 16:52:23)
+Error: El parámetro no es válido.
+Method: System.Drawing.Image FromStream(System.IO.Stream, Boolean, Boolean)
+Linea:    en System.Drawing.Image.FromStream(Stream stream, Boolean useEmbeddedColorManagement, Boolean validateImageData)
+   en System.Drawing.Image.FromStream(Stream stream)
+   en BIOCHECK.ScreenHomeLite.InfoPersonal(SocioModel socio, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 141
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 355
+
+File: ScreenHomeLite (09/07/2024 20:24:43)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'pTurno1' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   en System.Windows.Forms.Control.set_Visible(Boolean value)
+   en BIOCHECK.ScreenHomeLite.renderHorarioFijo(HorarioFijo hfijo) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 236
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 354
+
+File: ScreenHomeLite (09/07/2024 20:30:16)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'pTurno1' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   en System.Windows.Forms.Control.set_Visible(Boolean value)
+   en BIOCHECK.ScreenHomeLite.renderHorarioFijo(HorarioFijo hfijo) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 236
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 354
+
+File: ScreenHomeLite (09/07/2024 20:33:09)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'pTurno1' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   en System.Windows.Forms.Control.set_Visible(Boolean value)
+   en BIOCHECK.ScreenHomeLite.renderHorarioFijo(HorarioFijo hfijo) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 236
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 354
+
+File: ScreenHomeLite (09/07/2024 20:38:12)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'pTurno1' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   en System.Windows.Forms.Control.set_Visible(Boolean value)
+   en BIOCHECK.ScreenHomeLite.renderHorarioFijo(HorarioFijo hfijo) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 236
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 354
+
+File: ScreenHomeLite (09/07/2024 20:38:35)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'pTurno1' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   en System.Windows.Forms.Control.set_Visible(Boolean value)
+   en BIOCHECK.ScreenHomeLite.renderHorarioFijo(HorarioFijo hfijo) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 236
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 354
+
+File: ScreenHomeLite (09/07/2024 20:55:53)
+Error: Se canceló una tarea.
+Method: Void ThrowForNonSuccess(System.Threading.Tasks.Task)
+Linea:    en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   en ZKTecoFingerPrintScanner_Implementation.Services.AppsFitService.<MarcarPersonalFijo>d__21.MoveNext() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Services\AppsFitService.cs:línea 482
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   en BIOCHECK.ScreenHomeLite.<MarckPersonalFijoAsync>d__40.MoveNext() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 272
+
+File: ScreenHomeLite (10/07/2024 17:04:38)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'pTurno1' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   en System.Windows.Forms.Control.set_Visible(Boolean value)
+   en BIOCHECK.ScreenHomeLite.renderHorarioFijo(HorarioFijo hfijo) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 236
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 354

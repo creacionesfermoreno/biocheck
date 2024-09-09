@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\David\Downloads\BioCheckV4\</PublishUrl>
+    <PublishUrl>C:\Users\David\Desktop\BiocheckRelease\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -24,7 +24,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>https://contenidosappsfit.blob.core.windows.net/biocheck/</UpdateUrl>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>2.1.1.0</ApplicationVersion>
+    <ApplicationVersion>2.4.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -81,7 +81,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
@@ -157,6 +157,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aviso.Designer.cs">
+      <DependentUpon>Aviso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\FingerPrintControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -210,6 +216,9 @@
       <DependentUpon>ScreenHomeLite.cs</DependentUpon>
     </Compile>
     <Compile Include="Services\AppsFitService.cs" />
+    <EmbeddedResource Include="Aviso.resx">
+      <DependentUpon>Aviso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\FingerPrintControl.resx">
       <DependentUpon>FingerPrintControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,6 +271,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\cerrarsesion.png" />
+    <None Include="Resources\img-aviso.png" />
     <Content Include="Resources\img-view.png" />
     <Content Include="Resources\restringSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
