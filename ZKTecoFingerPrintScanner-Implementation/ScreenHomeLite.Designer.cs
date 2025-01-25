@@ -809,7 +809,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.076142F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.92386F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
             this.tableLayoutPanel3.Controls.Add(this.lblFullName_, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(-1, 195);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -828,7 +828,7 @@
             this.lblFullName_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
             this.lblFullName_.Location = new System.Drawing.Point(13, 0);
             this.lblFullName_.Name = "lblFullName_";
-            this.lblFullName_.Size = new System.Drawing.Size(193, 60);
+            this.lblFullName_.Size = new System.Drawing.Size(192, 60);
             this.lblFullName_.TabIndex = 1;
             this.lblFullName_.Text = "NOMBRES, APELLIDOS COMPLETOS";
             this.lblFullName_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1839,7 +1839,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(155, 13);
             this.label22.TabIndex = 31;
-            this.label22.Text = "version: 2.4.0.0 - BioCheck Lite";
+            this.label22.Text = "version: 2.4.5.0 - BioCheck Lite";
             // 
             // btnSearchUpdate
             // 

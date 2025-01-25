@@ -310,13 +310,13 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panelDeviceConnect = new System.Windows.Forms.Panel();
             this.lblSerie = new System.Windows.Forms.Label();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.statusBar1 = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
+            this.lblMessage = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.timerNow = new System.Windows.Forms.Timer(this.components);
-            this.statusBar1 = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
-            this.lblMessage = new ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar();
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
@@ -668,7 +668,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.83502F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.16498F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 427F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 428F));
             this.tableLayoutPanel7.Controls.Add(this.panel18, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.panel19, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.pictureBox26, 2, 0);
@@ -693,7 +693,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel18.Controls.Add(this.panel20);
             this.panel18.Location = new System.Drawing.Point(3, 3);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(242, 324);
+            this.panel18.Size = new System.Drawing.Size(241, 324);
             this.panel18.TabIndex = 0;
             // 
             // panel39
@@ -706,7 +706,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel39.Controls.Add(this.pictureBox23);
             this.panel39.Location = new System.Drawing.Point(22, 266);
             this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(221, 50);
+            this.panel39.Size = new System.Drawing.Size(220, 50);
             this.panel39.TabIndex = 76;
             // 
             // panel40
@@ -717,7 +717,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel40.Controls.Add(this.txtMContrato);
             this.panel40.Location = new System.Drawing.Point(168, 0);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(53, 50);
+            this.panel40.Size = new System.Drawing.Size(52, 50);
             this.panel40.TabIndex = 4;
             // 
             // txtMContrato
@@ -761,7 +761,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel35.Controls.Add(this.pictureBox21);
             this.panel35.Location = new System.Drawing.Point(22, 205);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(221, 50);
+            this.panel35.Size = new System.Drawing.Size(220, 50);
             this.panel35.TabIndex = 75;
             // 
             // panel36
@@ -772,7 +772,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel36.Controls.Add(this.txtMDebe);
             this.panel36.Location = new System.Drawing.Point(168, 0);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(53, 50);
+            this.panel36.Size = new System.Drawing.Size(52, 50);
             this.panel36.TabIndex = 4;
             // 
             // txtMDebe
@@ -816,7 +816,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel31.Controls.Add(this.pictureBox19);
             this.panel31.Location = new System.Drawing.Point(22, 140);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(221, 50);
+            this.panel31.Size = new System.Drawing.Size(220, 50);
             this.panel31.TabIndex = 74;
             // 
             // panel32
@@ -827,7 +827,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel32.Controls.Add(this.txtMAcuenta);
             this.panel32.Location = new System.Drawing.Point(168, 0);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(53, 50);
+            this.panel32.Size = new System.Drawing.Size(52, 50);
             this.panel32.TabIndex = 4;
             // 
             // txtMAcuenta
@@ -871,7 +871,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel27.Controls.Add(this.pictureBox17);
             this.panel27.Location = new System.Drawing.Point(22, 79);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(219, 50);
+            this.panel27.Size = new System.Drawing.Size(218, 50);
             this.panel27.TabIndex = 73;
             // 
             // panel28
@@ -882,7 +882,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel28.Controls.Add(this.txtMPrecio);
             this.panel28.Location = new System.Drawing.Point(168, 0);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(51, 50);
+            this.panel28.Size = new System.Drawing.Size(50, 50);
             this.panel28.TabIndex = 4;
             // 
             // txtMPrecio
@@ -926,7 +926,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel20.Controls.Add(this.pictureBox14);
             this.panel20.Location = new System.Drawing.Point(22, 14);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(219, 50);
+            this.panel20.Size = new System.Drawing.Size(218, 50);
             this.panel20.TabIndex = 72;
             // 
             // panel22
@@ -937,7 +937,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel22.Controls.Add(this.txtMFInicio);
             this.panel22.Location = new System.Drawing.Point(168, 0);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(50, 50);
+            this.panel22.Size = new System.Drawing.Size(49, 50);
             this.panel22.TabIndex = 4;
             // 
             // txtMFInicio
@@ -981,7 +981,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.panel19.Controls.Add(this.panel33);
             this.panel19.Controls.Add(this.panel29);
             this.panel19.Controls.Add(this.panel21);
-            this.panel19.Location = new System.Drawing.Point(251, 3);
+            this.panel19.Location = new System.Drawing.Point(250, 3);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(206, 324);
             this.panel19.TabIndex = 1;
@@ -1267,9 +1267,9 @@ namespace ZKTecoFingerPrintScanner_Implementation
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox26.Image = global::BIOCHECK.Properties.Resources.person;
-            this.pictureBox26.Location = new System.Drawing.Point(463, 3);
+            this.pictureBox26.Location = new System.Drawing.Point(462, 3);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(422, 324);
+            this.pictureBox26.Size = new System.Drawing.Size(423, 324);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 2;
             this.pictureBox26.TabStop = false;
@@ -1362,7 +1362,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.17586F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.82414F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 447F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 448F));
             this.tableLayoutPanel5.Controls.Add(this.panel17, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.lblPlan, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.txtMPromo, 1, 2);
@@ -1416,7 +1416,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblPlan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(28)))), ((int)(((byte)(70)))));
             this.lblPlan.Location = new System.Drawing.Point(188, 14);
             this.lblPlan.Name = "lblPlan";
-            this.lblPlan.Size = new System.Drawing.Size(249, 61);
+            this.lblPlan.Size = new System.Drawing.Size(248, 61);
             this.lblPlan.TabIndex = 69;
             this.lblPlan.Text = "NOMBRE DE PLAN";
             this.lblPlan.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -1431,7 +1431,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.txtMPromo.Location = new System.Drawing.Point(188, 75);
             this.txtMPromo.Name = "txtMPromo";
             this.txtMPromo.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.txtMPromo.Size = new System.Drawing.Size(249, 25);
+            this.txtMPromo.Size = new System.Drawing.Size(248, 25);
             this.txtMPromo.TabIndex = 70;
             this.txtMPromo.Text = "Detalle";
             // 
@@ -1878,7 +1878,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.materialLabel2.Location = new System.Drawing.Point(3, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(121, 18);
+            this.materialLabel2.Size = new System.Drawing.Size(121, 19);
             this.materialLabel2.TabIndex = 4;
             this.materialLabel2.Text = "Codigo :";
             // 
@@ -1893,7 +1893,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.materialLabel3.Location = new System.Drawing.Point(3, 38);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(121, 18);
+            this.materialLabel3.Size = new System.Drawing.Size(121, 19);
             this.materialLabel3.TabIndex = 5;
             this.materialLabel3.Text = "Nombres :";
             // 
@@ -1908,7 +1908,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.materialLabel4.Location = new System.Drawing.Point(3, 76);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(121, 18);
+            this.materialLabel4.Size = new System.Drawing.Size(121, 19);
             this.materialLabel4.TabIndex = 6;
             this.materialLabel4.Text = "Apellidos :";
             // 
@@ -1923,7 +1923,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.materialLabel5.Location = new System.Drawing.Point(3, 111);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(121, 18);
+            this.materialLabel5.Size = new System.Drawing.Size(121, 38);
             this.materialLabel5.TabIndex = 7;
             this.materialLabel5.Text = "Nro documento :";
             // 
@@ -2445,7 +2445,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(175, 13);
             this.label22.TabIndex = 30;
-            this.label22.Text = "version: 2.4.0.0 - BioCheck Standar";
+            this.label22.Text = "version: 2.4.5.0 - BioCheck Standar";
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // button1
@@ -3620,7 +3620,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.tableLayoutPanel8.ColumnCount = 3;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.96644F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.03356F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 367F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 368F));
             this.tableLayoutPanel8.Controls.Add(this.lblCountEvent, 2, 1);
             this.tableLayoutPanel8.Controls.Add(this.lblCountFijo, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.lblCount, 0, 1);
@@ -3640,10 +3640,10 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCountEvent.AutoSize = true;
             this.lblCountEvent.BackColor = System.Drawing.Color.Transparent;
             this.lblCountEvent.ForeColor = System.Drawing.Color.White;
-            this.lblCountEvent.Location = new System.Drawing.Point(80, 23);
+            this.lblCountEvent.Location = new System.Drawing.Point(79, 23);
             this.lblCountEvent.Name = "lblCountEvent";
             this.lblCountEvent.Padding = new System.Windows.Forms.Padding(5);
-            this.lblCountEvent.Size = new System.Drawing.Size(362, 23);
+            this.lblCountEvent.Size = new System.Drawing.Size(363, 23);
             this.lblCountEvent.TabIndex = 34;
             this.lblCountEvent.Text = "Registros Profesionales : 0";
             // 
@@ -3653,7 +3653,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCountFijo.AutoSize = true;
             this.lblCountFijo.BackColor = System.Drawing.Color.Transparent;
             this.lblCountFijo.ForeColor = System.Drawing.Color.White;
-            this.lblCountFijo.Location = new System.Drawing.Point(38, 23);
+            this.lblCountFijo.Location = new System.Drawing.Point(37, 23);
             this.lblCountFijo.Name = "lblCountFijo";
             this.lblCountFijo.Padding = new System.Windows.Forms.Padding(5);
             this.lblCountFijo.Size = new System.Drawing.Size(36, 23);
@@ -3669,7 +3669,7 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.lblCount.Location = new System.Drawing.Point(3, 23);
             this.lblCount.Name = "lblCount";
             this.lblCount.Padding = new System.Windows.Forms.Padding(5);
-            this.lblCount.Size = new System.Drawing.Size(29, 23);
+            this.lblCount.Size = new System.Drawing.Size(28, 23);
             this.lblCount.TabIndex = 31;
             this.lblCount.Text = "Cant. Registros : 0";
             // 
@@ -3949,6 +3949,34 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.pictureBox27.TabIndex = 0;
             this.pictureBox27.TabStop = false;
             // 
+            // statusBar1
+            // 
+            this.statusBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.statusBar1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusBar1.Location = new System.Drawing.Point(626, 32);
+            this.statusBar1.Message = "Estado membresia";
+            this.statusBar1.MessageType = false;
+            this.statusBar1.Name = "statusBar1";
+            this.statusBar1.Size = new System.Drawing.Size(330, 26);
+            this.statusBar1.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.statusBar1.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
+            this.statusBar1.TabIndex = 1;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Location = new System.Drawing.Point(626, 64);
+            this.lblMessage.Message = "Estado socio ";
+            this.lblMessage.MessageType = false;
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(329, 23);
+            this.lblMessage.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
+            this.lblMessage.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblMessage.TabIndex = 0;
+            // 
             // tableLayoutPanel15
             // 
             this.tableLayoutPanel15.ColumnCount = 2;
@@ -4015,34 +4043,6 @@ namespace ZKTecoFingerPrintScanner_Implementation
             this.timerNow.Enabled = true;
             this.timerNow.Interval = 1000;
             this.timerNow.Tick += new System.EventHandler(this.timerNow_Tick);
-            // 
-            // statusBar1
-            // 
-            this.statusBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.statusBar1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusBar1.Location = new System.Drawing.Point(626, 32);
-            this.statusBar1.Message = "Estado membresia";
-            this.statusBar1.MessageType = false;
-            this.statusBar1.Name = "statusBar1";
-            this.statusBar1.Size = new System.Drawing.Size(330, 26);
-            this.statusBar1.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.statusBar1.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
-            this.statusBar1.TabIndex = 1;
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMessage.Location = new System.Drawing.Point(626, 64);
-            this.lblMessage.Message = "Estado socio ";
-            this.lblMessage.MessageType = false;
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(329, 23);
-            this.lblMessage.StatusBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(47)))), ((int)(((byte)(59)))));
-            this.lblMessage.StatusBarForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblMessage.TabIndex = 0;
             // 
             // ScreenHome
             // 

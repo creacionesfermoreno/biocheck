@@ -76,6 +76,7 @@ namespace ZKTecoFingerPrintScanner_Implementation.Models
         public int flagPaqueteSedePermiso { get; set; }
         public string ObtenerTiempoVencimiento { get; set; }
         public string ObtenerEstadoCitaNutrional { get; set; }
+        public int FinalizaSesion { get; set; }
     }
 
     public class Asistence
