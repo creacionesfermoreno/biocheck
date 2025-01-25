@@ -85,3 +85,377 @@ Linea:    en System.Windows.Forms.Control.get_Handle()
    en System.Windows.Forms.Control.set_Visible(Boolean value)
    en BIOCHECK.ScreenHomeLite.renderHorarioFijo(HorarioFijo hfijo) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 236
    en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 354
+
+File: ScreenHomeLite (10/12/2024 14:04:13)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lboxProfesionales' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   en System.Windows.Forms.ListBox.NativeClear()
+   en System.Windows.Forms.ListBox.ObjectCollection.ClearInternal()
+   en System.Windows.Forms.ListBox.ObjectCollection.Clear()
+   en BIOCHECK.ScreenHomeLite.RenderLViewProfesionales() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 162
+
+File: ScreenHomeLite (10/12/2024 14:04:13)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPName' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.InfoPersonal(SocioModel socio, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 128
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 372
+
+File: ScreenHomeLite (10/12/2024 15:13:52)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lboxProfesionales' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   en System.Windows.Forms.ListBox.NativeClear()
+   en System.Windows.Forms.ListBox.ObjectCollection.ClearInternal()
+   en System.Windows.Forms.ListBox.ObjectCollection.Clear()
+   en BIOCHECK.ScreenHomeLite.RenderLViewProfesionales() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 162
+
+File: ScreenHomeLite (10/12/2024 15:13:52)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPName' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.InfoPersonal(SocioModel socio, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 128
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 372
+
+File: ScreenHomeLite (10/12/2024 15:15:19)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lboxProfesionales' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   en System.Windows.Forms.ListBox.NativeClear()
+   en System.Windows.Forms.ListBox.ObjectCollection.ClearInternal()
+   en System.Windows.Forms.ListBox.ObjectCollection.Clear()
+   en BIOCHECK.ScreenHomeLite.RenderLViewProfesionales() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 162
+
+File: ScreenHomeLite (10/12/2024 15:15:19)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPName' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.InfoPersonal(SocioModel socio, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 128
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 372
+
+File: ScreenHomeLite (10/12/2024 15:16:03)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lboxProfesionales' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   en System.Windows.Forms.ListBox.NativeClear()
+   en System.Windows.Forms.ListBox.ObjectCollection.ClearInternal()
+   en System.Windows.Forms.ListBox.ObjectCollection.Clear()
+   en BIOCHECK.ScreenHomeLite.RenderLViewProfesionales() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 162
+
+File: ScreenHomeLite (10/12/2024 15:16:03)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPName' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.InfoPersonal(SocioModel socio, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 128
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 372
+
+File: ScreenHomeLite (10/12/2024 15:17:46)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lboxProfesionales' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   en System.Windows.Forms.ListBox.NativeClear()
+   en System.Windows.Forms.ListBox.ObjectCollection.ClearInternal()
+   en System.Windows.Forms.ListBox.ObjectCollection.Clear()
+   en BIOCHECK.ScreenHomeLite.RenderLViewProfesionales() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 162
+
+File: ScreenHomeLite (10/12/2024 15:17:46)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPName' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.InfoPersonal(SocioModel socio, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 128
+   en BIOCHECK.ScreenHomeLite.OnEventPersonal(String type) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 372
+
+File: ScreenHomeLite (10/12/2024 15:26:12)
+Error: Se canceló una tarea.
+Method: Void ThrowForNonSuccess(System.Threading.Tasks.Task)
+Linea:    en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   en ZKTecoFingerPrintScanner_Implementation.Services.AppsFitService.<MarcarPersonalProfesional>d__22.MoveNext() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Services\AppsFitService.cs:línea 511
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   en BIOCHECK.ScreenHomeLite.<MarkPersonalProfesional>d__41.MoveNext() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 323
+
+File: ScreenHomeLite (10/12/2024 15:36:13)
+Error: Se canceló una tarea.
+Method: Void ThrowForNonSuccess(System.Threading.Tasks.Task)
+Linea:    en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   en ZKTecoFingerPrintScanner_Implementation.Services.AppsFitService.<MarcarPersonalProfesional>d__22.MoveNext() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Services\AppsFitService.cs:línea 511
+--- Fin del seguimiento de la pila de la ubicación anterior donde se produjo la excepción ---
+   en System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   en System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   en BIOCHECK.ScreenHomeLite.<MarkPersonalProfesional>d__41.MoveNext() en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 323
+
+File: ScreeHomeLite (30/12/2024 17:30:15)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'txtMFInicio' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.OnEventGeneral(String message, Object message2) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 408
+
+File: ScreeHomeLite (30/12/2024 17:30:28)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'txtMFInicio' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.OnEventGeneral(String message, Object message2) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 408
+
+File: ScreeHomeLite (17/01/2025 9:36:55)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblDeudaProductos' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.StlyDeuda(String message, Boolean deuda) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 599
+
+File: ScreeHomeLite (17/01/2025 9:36:55)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessageMem' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.MessageStatusMembresia(String message, Int32 status, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 584
+
+File: ScreeHomeLite (17/01/2025 9:36:55)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessage' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar.set_Message(String value) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Controls\StatusBar.cs:línea 32
+   en BIOCHECK.ScreenHomeLite.StatusMessageD(String message, Boolean success, Boolean reset) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 820
+
+File: ScreeHomeLite (17/01/2025 9:36:55)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPlan' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.OnEventGeneral(String message, Object message2) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 440
+
+File: ScreeHomeLite (17/01/2025 9:37:54)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblDeudaProductos' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.StlyDeuda(String message, Boolean deuda) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 599
+
+File: ScreeHomeLite (17/01/2025 9:37:54)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessageMem' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.MessageStatusMembresia(String message, Int32 status, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 584
+
+File: ScreeHomeLite (17/01/2025 9:37:54)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessage' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar.set_Message(String value) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Controls\StatusBar.cs:línea 32
+   en BIOCHECK.ScreenHomeLite.StatusMessageD(String message, Boolean success, Boolean reset) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 820
+
+File: ScreeHomeLite (17/01/2025 9:37:54)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPlan' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.OnEventGeneral(String message, Object message2) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 440
+
+File: ScreeHomeLite (17/01/2025 9:39:34)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblDeudaProductos' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.StlyDeuda(String message, Boolean deuda) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 599
+
+File: ScreeHomeLite (17/01/2025 9:39:34)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessageMem' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.MessageStatusMembresia(String message, Int32 status, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 584
+
+File: ScreeHomeLite (17/01/2025 9:39:34)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessage' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar.set_Message(String value) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Controls\StatusBar.cs:línea 32
+   en BIOCHECK.ScreenHomeLite.StatusMessageD(String message, Boolean success, Boolean reset) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 820
+
+File: ScreeHomeLite (17/01/2025 9:39:34)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPlan' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.OnEventGeneral(String message, Object message2) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 440
+
+File: ScreeHomeLite (17/01/2025 9:40:17)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblDeudaProductos' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.StlyDeuda(String message, Boolean deuda) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 599
+
+File: ScreeHomeLite (17/01/2025 9:40:17)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessageMem' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.MessageStatusMembresia(String message, Int32 status, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 584
+
+File: ScreeHomeLite (17/01/2025 9:40:17)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessage' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar.set_Message(String value) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Controls\StatusBar.cs:línea 32
+   en BIOCHECK.ScreenHomeLite.StatusMessageD(String message, Boolean success, Boolean reset) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 820
+
+File: ScreeHomeLite (17/01/2025 9:40:17)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPlan' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.OnEventGeneral(String message, Object message2) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 440
+
+File: ScreeHomeLite (17/01/2025 9:44:46)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblDeudaProductos' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.StlyDeuda(String message, Boolean deuda) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 599
+
+File: ScreeHomeLite (17/01/2025 9:44:46)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessageMem' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.MessageStatusMembresia(String message, Int32 status, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 584
+
+File: ScreeHomeLite (17/01/2025 9:44:46)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessage' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar.set_Message(String value) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Controls\StatusBar.cs:línea 32
+   en BIOCHECK.ScreenHomeLite.StatusMessageD(String message, Boolean success, Boolean reset) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 820
+
+File: ScreeHomeLite (17/01/2025 9:44:46)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPlan' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.OnEventGeneral(String message, Object message2) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 440
+
+File: ScreeHomeLite (17/01/2025 9:46:31)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblDeudaProductos' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.StlyDeuda(String message, Boolean deuda) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 599
+
+File: ScreeHomeLite (17/01/2025 9:46:31)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessageMem' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.MessageStatusMembresia(String message, Int32 status, Boolean clear) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 584
+
+File: ScreeHomeLite (17/01/2025 9:46:31)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblMessage' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en ZKTecoFingerPrintScanner_Implementation.Controls.StatusBar.set_Message(String value) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\Controls\StatusBar.cs:línea 32
+   en BIOCHECK.ScreenHomeLite.StatusMessageD(String message, Boolean success, Boolean reset) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 820
+
+File: ScreeHomeLite (17/01/2025 9:46:31)
+Error: Operación no válida a través de subprocesos: Se tuvo acceso al control 'lblPlan' desde un subproceso distinto a aquel en que lo creó.
+Method: IntPtr get_Handle()
+Linea:    en System.Windows.Forms.Control.get_Handle()
+   en System.Windows.Forms.Control.set_WindowText(String value)
+   en System.Windows.Forms.Control.set_Text(String value)
+   en System.Windows.Forms.Label.set_Text(String value)
+   en BIOCHECK.ScreenHomeLite.OnEventGeneral(String message, Object message2) en C:\Users\David\Desktop\BiocheckLite\biocheck\ZKTecoFingerPrintScanner-Implementation\ScreenHomeLite.cs:línea 440

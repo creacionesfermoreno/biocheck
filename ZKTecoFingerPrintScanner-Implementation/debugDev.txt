@@ -1,0 +1,46 @@
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+ZKTecoFingerPrintScanner_Implementation.Models.ResponseHProfesional
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-1True
+
+NRO ASISTENCIAS LLEGO A SU LIMITE, REVISA EL NRO DE SESIONES DE LA MEMBRESIAFalse
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-2True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-3True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-4True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-5True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-6True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-1True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-2True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-3True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-7True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-8True
+
+SE MARCO LA ASISTENCIA CORRECTAMENTE-4True

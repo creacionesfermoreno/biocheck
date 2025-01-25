@@ -411,7 +411,7 @@ namespace BIOCHECK
                             txtMFrezing.Text = membresia.CantidadFreezing.ToString();
                             txtMFrezingTom.Text = membresia.CantidadFreezingTomados.ToString();
                             txtMFrezingActual.Text = membresia.CantidadAsistencia.ToString();
-
+                           
                             btnMarkAsistence.Visible = true;
                             lblPlan.Text = membresia.Descripcion.ToUpper();
                             MessageStatusMembresia(membresia.ObtenerTiempoVencimiento, membresia.Estado);
@@ -1404,12 +1404,31 @@ namespace BIOCHECK
                                         Fecha = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
                                     };
 
+                                    var dataS = new
+                                    {
+                                        CodigoUnidadNegocio = DataSession.Unidad,
+                                        Sede = DataSession.Sede,
+                                        Socio = dataSocioAll.MembresiasSelected.CodigoSocio,
+                                        Membresia = dataSocioAll.MembresiasSelected.CodigoMenbresia,
+                                    };
+
+                                    var nroIngreso = dataSocioAll.MembresiasSelected.NroIngreso;
+                                    var nroIngresoActual = dataSocioAll.MembresiasSelected.NroIngresoActual;
+                                    var finalizaSesion = dataSocioAll.MembresiasSelected.FinalizaSesion;
+
+                                    var nroIngresoMenos = nroIngreso - 1;
+
                                     var res = await serv.MarkAsistence(data);
                                     //StatusMessageD($"{res.Message1}", res.Success);
                                     StatusMessageAsistencia($"{res.Message1}", res.Success);
                                     managementZk.createFile(res.Message1 + "" + res.Success);
                                     if (res.Success)
                                     {
+                                        //update membresia
+                                        if(finalizaSesion == 1 && nroIngresoActual == nroIngresoMenos)
+                                        {
+                                            await serv.actualizarMembresiaFinalizaXSesion(dataS);
+                                        }
                                         // Update List
                                         await managementZk.ReloadDataAsistence();
                                         soundAccessValidate();
